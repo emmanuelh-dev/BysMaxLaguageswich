@@ -1,0 +1,6 @@
+{
+  "description": "This is a non-page component and requires its own namespace",
+  "helpLocize": "By using <1>locize</1>, you directly support the future of <3>i18next</3>",
+  "test":"This is a test",
+  "copy":"© 2023 BysMax. All rights reserved."
+}
