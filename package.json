@@ -13,18 +13,19 @@
   },
   "dependencies": {
     "i18next": "22.4.9",
-    "next": "^13.1.6",
+    "next": "^13.2.0",
     "next-i18next": "^13.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^12.1.5"
+    "react-i18next": "^12.1.5",
+    "turbopack": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "autoprefixer": "^10.4.13",
-    "eslint-config-next": "^13.1.6",
+    "eslint-config-next": "^13.2.0",
     "picocolors": "^1.0.0",
     "postcss": "^8.4.21",
     "rimraf": "^4.1.2",

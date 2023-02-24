@@ -1,0 +1,5 @@
+{
+  "calcName": ["Ohm's Law Calculator", "Capacitor Calculator", "Resistor Color Code"],
+  "calcDescription": ["Calculate voltage, current, resistance and power using Ohm&rsquo;s Law.", "Calculate the capacitance, voltage or charge stored on a capacitor.", "Find the resistance value of a resistor from its color code."],
+  "calcHrf": ["/ohm", "/capacitor", "/resistorcode"]
+}

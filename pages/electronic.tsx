@@ -6,36 +6,40 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import Calcs from "./electronic/Calcs";
+
+
 
 type Props = {
   // Add custom props here
 };
 
-const about = (
+const electronic = (
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
   const { t } = useTranslation(["common", "second-page"]);
 
   return (
-    <>
+    <div className="bg-white text-black dark:bg-black dark:text-white">
       <Header />
-      <main>
-
-      </main>
+      <div className="flex items-center justify-between container mx-auto max-w-7xl w-full p-6">
+        
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
+
 export const getServerSideProps: GetServerSideProps<Props> = async ({
   locale,
 }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? "en", [
       "header",
-      "about",
+      "electronic",
       "footer",
     ])),
   },
 });
 
-export default about;
+export default electronic;
