@@ -8,6 +8,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import calculators from "../public/locales/en/calcs.json";
 import { CalculatorsComponent } from "components/CalculatorsComponent";
+import { Layout } from "components/Layout";
 
 type Props = {
   // Add custom props here
@@ -19,7 +20,7 @@ const electronic = (
   const { t } = useTranslation(["electronic"]);
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white">
-      <Header title={t("title")} />
+      <Layout title={t("electronic:title")} description={t("electronic:description")}>
       <div className="items-center justify-between container mx-auto max-w-7xl w-full p-6">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">{t("electronic:h1")}</h1>
         <p className="text-lg md:text-xl">{t("electronic:p")}</p>
@@ -47,7 +48,7 @@ const electronic = (
         </div>
       </div>
       <CalculatorsComponent />
-      <Footer />
+      </Layout>
     </div>
   );
 };

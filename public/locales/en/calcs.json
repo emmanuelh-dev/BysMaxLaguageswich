@@ -31,5 +31,17 @@
     "link": "/electronic/resistorcolorcode",
     "image": "/ohm.png"
 
+  },
+  {
+    "name": "Capacitor Calculator",
+    "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/ohm.png"
+  },
+  {
+    "name": "Capacitor Calculator",
+    "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/ohm.png"
   }
 ]

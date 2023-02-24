@@ -7,6 +7,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { CalculatorsComponent } from "components/CalculatorsComponent";
+import { Layout } from "components/Layout";
 
 type Props = {
   // Add custom props here
@@ -18,13 +19,15 @@ const index = (
   const { t } = useTranslation(["homepage"]);
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white">
-      <Header title={t("title")} />
-      <div className="items-center justify-between container mx-auto max-w-7xl w-full pt-6 pb-6">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">{t("homepage:h1")}</h1>
-        <p className="text-lg md:text-xl">{t("homepage:p")}</p>
-      </div>
-      <CalculatorsComponent />
-      <Footer />
+      <Layout title={t("homepage:title")} description={t("homepage:description")}>
+        <div className="items-center justify-between container mx-auto max-w-7xl w-full pt-6 pb-6">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            {t("homepage:h1")}
+          </h1>
+          <p className="text-lg md:text-xl">{t("homepage:p")}</p>
+        </div>
+        <CalculatorsComponent />
+      </Layout>
     </div>
   );
 };
