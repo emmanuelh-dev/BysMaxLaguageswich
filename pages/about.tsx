@@ -14,11 +14,10 @@ type Props = {
 const about = (
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
-  const { t } = useTranslation(["common", "second-page"]);
-
+  const { t } = useTranslation(["electronic"]);
   return (
     <>
-      <Header />
+      <Header title={t("title")}/>
       <main>
 
       </main>
@@ -32,7 +31,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
   props: {
     ...(await serverSideTranslations(locale ?? "en", [
       "header",
-      "about",
+      "electronic",
       "footer",
     ])),
   },

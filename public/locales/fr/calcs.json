@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Ohm's Law Calculator",
+    "description": "Calculate voltage, current, resistance and power using Ohm's Law.",
+    "link": "/electronic/ohmlawcalculator"
+  },
+  {
+    "name": "Capacitor Calculator",
+    "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
+    "link": "/electronic/capacitorcalculator"
+  },
+  {
+    "name": "Resistor Color Code",
+    "description": "Find the resistance value of a resistor from its color code.",
+    "link": "/electronic/resistorcolorcode"
+  },
+  {
+    "name": "Resistor Color Code",
+    "description": "Find the resistance value of a resistor from its color code.",
+    "link": "/electronic/resistorcolorcode"
+  },
+  {
+    "name": "Resistor Color Code",
+    "description": "Find the resistance value of a resistor from its color code.",
+    "link": "/electronic/resistorcolorcode"
+  }
+]

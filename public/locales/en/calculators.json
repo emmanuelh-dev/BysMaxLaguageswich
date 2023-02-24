@@ -1,0 +1,16 @@
+{
+  "calculators": [
+    {
+      "name": "Calculadora de ley de Ohm",
+      "description": "Calcula el voltaje, la corriente, la resistencia y la potencia utilizando la ley de Ohm.",
+      "link": "/electronic/ohmlawcalculator",
+      "image": "/ohm.png"
+    },
+    {
+      "name": "Calculadora de capacitor",
+      "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+      "link": "/electronic/capacitorcalculator",
+      "image": "/capacitor.png"
+    }
+  ]
+}

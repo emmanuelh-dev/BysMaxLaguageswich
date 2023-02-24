@@ -10,13 +10,17 @@ import 'i18next'
 import type common from '../public/locales/en/common.json'
 import type footer from '../public/locales/en/footer.json'
 import type header from '../public/locales/en/header.json'
-import type secondPage from '../public/locales/en/second-page.json'
+import type homepage from '../public/locales/en/homepage.json'
+import type calculators from '../public/locales/en/calculators.json'
+import type electronic from '../public/locales/en/electronic.json'
 
 interface I18nNamespaces {
   common: typeof common
+  homepage: typeof homepage
   footer: typeof footer
   header: typeof header
-  'second-page': typeof secondPage
+  calculators: typeof calculators
+  electronic: typeof electronic
 }
 
 declare module 'i18next' {
