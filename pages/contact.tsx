@@ -22,8 +22,8 @@ const index = (
     <div className="bg-white text-black dark:bg-black dark:text-white ">
       <Layout title={t("contact:title")} description={t("contact:description")}>
       <div className="container mx-auto max-w-2xl p-6">
-        <h1 className="text-3xl font-bold mb-6">{t("contact:h1")}</h1>
-        <p className="text-lg mb-6">
+        <h1 className="text-center text-6xl font-bold pt-6 pb-6 text-blue-700">{t("contact:h1")}</h1>
+        <p className="text-lg pt-6 pb-6">
         {t("contact:p")}
         </p>
         <form>

@@ -22,7 +22,7 @@ const electronic = (
     <div className="bg-white text-black dark:bg-black dark:text-white">
       <Layout title={t("electronic:title")} description={t("electronic:description")}>
       <div className="items-center justify-between container mx-auto max-w-7xl w-full p-6">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">{t("electronic:h1")}</h1>
+        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-blue-700">{t("electronic:h1")}</h1>
         <p className="text-lg md:text-xl">{t("electronic:p")}</p>
       </div>
 
@@ -31,14 +31,14 @@ const electronic = (
           {calculators.map((calculator) => (
             <div
               key={calculator.name}
-              className="border border-gray-500 border-md rounded-lg bg-white dark:bg-black p-4 shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+              className=" border-xl rounded-lg bg-white p-4 shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
             >
               <Link href={calculator.link}>
                 <span>
-                  <h2 className="text-xl font-semibold mb-4 text-yellow-500">
+                  <h2 className="text-xl font-semibold mb-4 text-blue-600">
                     {calculator.name}
                   </h2>
-                  <p className="text-gray-600 dark:text-gray-100">
+                  <p className="text-neutral-800 ">
                     {calculator.description}
                   </p>
                 </span>
