@@ -5,6 +5,15 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { CalculatorsComponent } from "components/CalculatorsComponent";
 import { Layout } from "components/Layout";
+import Image from "next/image";
+// Import the Cloudinary classes. 
+import {fill} from "@cloudinary/url-gen/actions/resize";
+import {CloudinaryImage} from '@cloudinary/url-gen';
+
+const myImage = new CloudinaryImage('sample', {cloudName: 'dvdq078aa'}).resize(fill().width(100).height(150));
+
+
+
 
 type Props = {
   // Add custom props here
@@ -17,7 +26,7 @@ const index = (
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white ">
       <Layout title={t("contact:title")} description={t("contact:description")}>
-      <div className="container mx-auto max-w-2xl p-6 h-screen">
+      <div className="container mx-auto max-w-2xl p-6">
         <h1 className="text-3xl font-bold mb-6">{t("contact:h1")}</h1>
         <p className="text-lg mb-6">
         {t("contact:p")}
@@ -70,8 +79,19 @@ const index = (
             {t("contact:form.submit")}
           </button>
         </form>
+        <div className="container pt-6 pb-6 flex items-center">
+          <Image
+            width={400}
+            height={400}
+            objectFit="cover"
+            src={"/media/contactus.svg"}
+            alt=""
+            className="mx-auto"
+          />
+        </div>
+
       </div>
-        <CalculatorsComponent />
+
       </Layout>
     </div>
   );
