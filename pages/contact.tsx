@@ -6,11 +6,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { CalculatorsComponent } from "components/CalculatorsComponent";
 import { Layout } from "components/Layout";
 import Image from "next/image";
-// Import the Cloudinary classes. 
-import {fill} from "@cloudinary/url-gen/actions/resize";
-import {CloudinaryImage} from '@cloudinary/url-gen';
-
-const myImage = new CloudinaryImage('sample', {cloudName: 'dvdq078aa'}).resize(fill().width(100).height(150));
 
 
 
