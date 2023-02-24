@@ -1,0 +1,24 @@
+{
+  "title": "Contáctanos - bysmax",
+  "description": "Ponte en contacto con nosotros en bysmax si tienes alguna pregunta o comentario.",
+  "h1": "Contáctanos",
+  "p": "Si tienes alguna pregunta o comentario, no dudes en contactarnos utilizando el formulario a continuación. Te responderemos lo antes posible.",
+  "form": {
+  "name": {
+  "label": "Nombre",
+  "placeholder": "Ingresa tu nombre",
+  "required": true
+  },
+  "email": {
+  "label": "Correo electrónico",
+  "placeholder": "Ingresa tu correo electrónico",
+  "required": true
+  },
+  "message": {
+  "label": "Mensaje",
+  "placeholder": "Ingresa tu mensaje aquí",
+  "required": true
+  },
+  "submit": "Enviar"
+  }
+  }

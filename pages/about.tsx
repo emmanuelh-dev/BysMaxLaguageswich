@@ -14,10 +14,10 @@ type Props = {
 const about = (
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
-  const { t } = useTranslation(["electronic"]);
+  const { t } = useTranslation(["footer"]);
   return (
     <>
-      <Header title={t("title")}/>
+      <Header/>
       <main>
 
       </main>

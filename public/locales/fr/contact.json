@@ -1,0 +1,24 @@
+{
+  "title": "Contactez-nous - bysmax",
+  "description": "Contactez-nous chez bysmax pour toutes vos questions ou commentaires.",
+  "h1": "Contactez-nous",
+  "p": "Si vous avez des questions ou des commentaires, n'hésitez pas à nous contacter en utilisant le formulaire ci-dessous. Nous vous répondrons dès que possible.",
+  "form": {
+  "name": {
+  "label": "Nom",
+  "placeholder": "Entrez votre nom",
+  "required": true
+  },
+  "email": {
+  "label": "Email",
+  "placeholder": "Entrez votre adresse e-mail",
+  "required": true
+  },
+  "message": {
+  "label": "Message",
+  "placeholder": "Entrez votre message ici",
+  "required": true
+  },
+  "submit": "Envoyer"
+  }
+  }

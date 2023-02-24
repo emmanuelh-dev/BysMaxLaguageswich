@@ -11,12 +11,15 @@ import type common from '../public/locales/en/common.json'
 import type footer from '../public/locales/en/footer.json'
 import type header from '../public/locales/en/header.json'
 import type homepage from '../public/locales/en/homepage.json'
+import type contact from '../public/locales/en/contact.json'
 import type calculators from '../public/locales/en/calculators.json'
 import type electronic from '../public/locales/en/electronic.json'
 
 interface I18nNamespaces {
   common: typeof common
   homepage: typeof homepage
+  contact: typeof contact
+
   footer: typeof footer
   header: typeof header
   calculators: typeof calculators
