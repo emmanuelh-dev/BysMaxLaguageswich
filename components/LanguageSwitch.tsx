@@ -9,8 +9,8 @@ const onToggleLanguageClick = (newLocale: string) => {
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
-  const handleLanguageChange = (e : React.ChangeEvent<HTMLSelectElement>) => {
-    onToggleLanguageClick(e.target.value)
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    onToggleLanguageClick(e.target.value);
   };
 
   return (
@@ -21,11 +21,12 @@ const LanguageSwitcher = () => {
       <select
         id="language-switcher"
         onChange={handleLanguageChange}
+        value={i18n.language} // Agregar value para seleccionar el idioma actualmente seleccionado
         className="px-2 py-1 border border-gray-300 bg-black rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
       >
         <option value="en">English</option>
         <option value="es">Español</option>
-        <option value="fr">Francais</option>
+        <option value="fr">Français</option>
       </select>
     </div>
   );
