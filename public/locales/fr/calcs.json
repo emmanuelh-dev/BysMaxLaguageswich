@@ -1,27 +1,42 @@
 [
   {
-    "name": "Ohm's Law Calculator",
-    "description": "Calculate voltage, current, resistance and power using Ohm's Law.",
-    "link": "/electronic/ohmlawcalculator"
+  "name": "Calculateur de Loi d'Ohm",
+  "description": "Calculez la tension, le courant, la résistance et la puissance à l'aide de la loi d'Ohm.",
+  "link": "/electronic/ohmlawcalculator",
+  "image": "/ohm.png"
   },
   {
-    "name": "Capacitor Calculator",
-    "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
-    "link": "/electronic/capacitorcalculator"
+  "name": "Calculateur de Condensateur",
+  "description": "Calculez la capacitance, la tension ou la charge stockée sur un condensateur.",
+  "link": "/electronic/capacitorcalculator",
+  "image": "/ohm.png"
   },
   {
-    "name": "Resistor Color Code",
-    "description": "Find the resistance value of a resistor from its color code.",
-    "link": "/electronic/resistorcolorcode"
+  "name": "Code de Couleur des Résistances",
+  "description": "Trouvez la valeur de la résistance d'une résistance à partir de son code de couleurs.",
+  "link": "/electronic/resistorcolorcode",
+  "image": "/ohm.png"
+  
   },
   {
-    "name": "Resistor Color Code",
-    "description": "Find the resistance value of a resistor from its color code.",
-    "link": "/electronic/resistorcolorcode"
+  "name": "Résistances en Parallèle",
+  "description": "Trouvez la résistance.",
+  "link": "/electronic/resistorcolorcode",
+  "image": "/ohm.png"
+  
   },
   {
-    "name": "Resistor Color Code",
-    "description": "Find the resistance value of a resistor from its color code.",
-    "link": "/electronic/resistorcolorcode"
-  }
-]
+  "name": "Résistances en Série",
+  "description": "Trouvez la résistance.",
+  "link": "/electronic/resistorcolorcode",
+  "image": "/ohm.png"
+  
+  },
+  {
+    "name": "Résistances en Série",
+    "description": "Trouvez la résistance.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/ohm.png"
+    
+    }
+  ]

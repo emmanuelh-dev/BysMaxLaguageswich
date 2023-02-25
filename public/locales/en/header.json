@@ -1,8 +1,17 @@
 {
-  "site": "BysMax",
-  "electronic": "Electronic",
-  "about": "About",
-  "contact": "Contact",
-  "description": "Description",
-  "calculators": "Calculators"
+  "navbar": {
+    "name": "Calculators",
+    "calc1": "Ohm Calculator"
+  },
+  "navigation": [
+    { "name": "Contact", "href": "/contact", "current": false },
+    { "name": "Team", "href": "#", "current": false },
+    { "name": "Projects", "href": "#", "current": false },
+    { "name": "Calendar", "href": "#", "current": false },
+    { "name": "Reports", "href": "#", "current": false }
+  ],
+  "userNavigation": [
+    { "name": "All", "href": "/electronic" },
+    { "name": "Settings", "href": "#" }
+  ]
 }

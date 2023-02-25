@@ -4,11 +4,22 @@ import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
-import calculators from "../public/locales/en/calcs.json";
 import { CalculatorsComponent } from "components/CalculatorsComponent";
 import { Layout } from "components/Layout";
+
+function getTranslations(lang: string) {
+  switch(lang) {
+    case "fr":
+      return require("/public/locales/fr/calcs.json");
+    case "es":
+      return require("/public/locales/es/calcs.json");
+    // Agrega más casos según los idiomas que necesites soportar
+    default:
+      return require("/public/locales/en/calcs.json");
+  }
+}
+
+
 
 type Props = {
   // Add custom props here
@@ -18,6 +29,8 @@ const electronic = (
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
   const { t } = useTranslation(["electronic"]);
+  const calculators = getTranslations(t("electronic:lang"));
+  console.log(t("electronic:lang"))
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white">
       <Layout title={t("electronic:title")} description={t("electronic:description")}>
@@ -28,7 +41,7 @@ const electronic = (
 
       <div className="flex items-center justify-between container mx-auto max-w-7xl w-full p-6">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          {calculators.map((calculator) => (
+          {calculators.map((calculator:{ name: string, link:string, description:string }) => (
             <div
               key={calculator.name}
               className=" border-xl rounded-lg bg-white p-4 shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"

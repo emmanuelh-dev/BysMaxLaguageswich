@@ -3,6 +3,7 @@
   "description": "Ponte en contacto con nosotros en bysmax si tienes alguna pregunta o comentario.",
   "h1": "Contáctanos",
   "p": "Si tienes alguna pregunta o comentario, no dudes en contactarnos utilizando el formulario a continuación. Te responderemos lo antes posible.",
+  "sorry":"Por ahora el servicio esta desactivado, si gusta puede contactarnos al siguiente correo: ",
   "form": {
   "name": {
   "label": "Nombre",

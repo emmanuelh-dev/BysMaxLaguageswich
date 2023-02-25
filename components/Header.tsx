@@ -14,7 +14,7 @@ const user = {
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
 const navigation = [
-  { name: "Contact", href: "/contact", current: true },
+  { name: "Contact", href: "/contact", current: false },
   { name: "Team", href: "#", current: false },
   { name: "Projects", href: "#", current: false },
   { name: "Calendar", href: "#", current: false },
@@ -23,7 +23,6 @@ const navigation = [
 const userNavigation = [
   { name: "All", href: "/electronic" },
   { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
 ];
 
 function classNames(...classes: string[]) {
@@ -44,7 +43,9 @@ export const Header: FC = ({}) => {
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <Link href="/">
-                        <span className="font-bold text-lg hover:text-blue-700">BysMax</span>
+                        <span className="font-bold text-lg hover:text-blue-700">
+                          BysMax
+                        </span>
                       </Link>
                     </div>
                     <div className="hidden md:block">
@@ -69,19 +70,13 @@ export const Header: FC = ({}) => {
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
-                      <button
-                        type="button"
-                        className="rounded-full dark:bg-black p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                      >
-                        <span className="sr-only">View notifications</span>
-                        <BellIcon className="h-6 w-6" aria-hidden="true" />
-                      </button>
-
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
                         <div>
-                          <Menu.Button className="flex max-w-xs items-center rounded-full dark:bg-black focus:outline-none hover:bg-gray-900 text-sm font-semibold">
-                            <span className="">{t("calculators")}</span>
+                          <Menu.Button className="flex max-w-xs items-center rounded dark:bg-black focus:outline-none hover:bg-gray-900 text-sm font-semibold">
+                            <span className="px-3 py-2">
+                              {t("navbar.name")}
+                            </span>
                           </Menu.Button>
                         </div>
                         <Transition
@@ -97,15 +92,16 @@ export const Header: FC = ({}) => {
                             {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
-                                  <a
-                                    href={item.href}
-                                    className={classNames(
-                                      active ? "bg-gray-100" : "",
-                                      "block px-4 py-2 text-sm text-gray-700"
-                                    )}
-                                  >
-                                    {item.name}
-                                  </a>
+                                  <Link href={item.href}>
+                                    <span
+                                      className={classNames(
+                                        active ? "bg-gray-100" : "",
+                                        "block px-4 py-2 text-sm text-gray-700"
+                                      )}
+                                    >
+                                      {item.name}
+                                    </span>
+                                  </Link>
                                 )}
                               </Menu.Item>
                             ))}
