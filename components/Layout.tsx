@@ -14,21 +14,23 @@ interface LayoutProps {
 export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
   const { t } = useTranslation("footer");
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white pt-6 pb-6">
-      <div className="container mx-auto px-4">
-        <Head>
-          <title>{title}</title>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta name="description" content={description} />
-          <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-          <link rel="shortcut icon" href="/favicon.ico" />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: `
+    <div>
+      <Header />
+      <div className="bg-white text-black dark:bg-black dark:text-white pt-6 pb-6">
+        <div className="container mx-auto px-4">
+          <Head>
+            <title>{title}</title>
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <meta name="description" content={description} />
+            <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+            <link rel="shortcut icon" href="/favicon.ico" />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: `
               {
                 "@context": "https://schema.org",
                 "@type": "Organization",
@@ -36,14 +38,15 @@ export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
                 "logo": "https://www.bysmax.com/logo.svg"
               }
             `,
-            }}
-          ></script>
-        </Head>
-        <Header />
+              }}
+            ></script>
+          </Head>
+          
 
-        {children}
-        <Footer />
-        <div className="flex items-center justify-center"></div>
+          {children}
+          <Footer />
+          <div className="flex items-center justify-center"></div>
+        </div>
       </div>
     </div>
   );
