@@ -22,7 +22,7 @@ const electronic = (
     <div className="bg-white text-black dark:bg-black dark:text-white">
       <Layout title={t("electronic:title")} description={t("electronic:description")}>
       <div className="items-center justify-between container mx-auto max-w-7xl w-full p-6">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-blue-700">{t("electronic:h1")}</h1>
+        <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-blue-700">{t("electronic:h1")}</h1>
         <p className="text-lg md:text-xl">{t("electronic:p")}</p>
       </div>
 

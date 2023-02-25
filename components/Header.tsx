@@ -13,7 +13,7 @@ export const Header: FC = ({  }) => {
       <nav className="flex items-center justify-between container mx-auto max-w-7xl w-full pt-6 pb-6">
         <div className="flex items-center">
           <Link href="/">
-          <span className="ml-2 text-xl font-bold">{t("site")}</span>
+          <span className="ml-2 text-2xl font-extrabold text-blue-600">{t("site")}</span>
           </Link>
         </div>
         <nav className="flex items-center">

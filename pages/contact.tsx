@@ -22,7 +22,7 @@ const index = (
     <div className="bg-white text-black dark:bg-black dark:text-white ">
       <Layout title={t("contact:title")} description={t("contact:description")}>
       <div className="container mx-auto max-w-2xl p-6">
-        <h1 className="text-center text-5xl md:text-6xl font-bold pt-6 pb-6 text-blue-700">{t("contact:h1")}</h1>
+        <h1 className="text-center text-5xl md:text-6xl font-extrabold pt-6 md:pb-6 text-blue-700">{t("contact:h1")}</h1>
         <p className="text-lg pt-6 pb-6">
         {t("contact:p")}
         </p>
