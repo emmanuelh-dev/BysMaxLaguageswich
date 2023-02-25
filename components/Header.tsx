@@ -52,21 +52,10 @@ export const Header: FC = ({}) => {
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
                           <Link href={item.href}>
-                          <span
-                          key={item.name}
-                          
-                          className={classNames(
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-sm font-medium"
-                          )}
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.name}
-                        </span>
+                            <span className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                              {item.name}
+                            </span>
                           </Link>
-  
                         ))}
                       </div>
                     </div>
@@ -136,20 +125,13 @@ export const Header: FC = ({}) => {
               <Disclosure.Panel className="md:hidden">
                 <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
                   {navigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                      href={item.href}
-                      className={classNames(
-                        item.current
-                          ? "bg-gray-900 text-white"
-                          : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                        "block px-3 py-2 rounded-md text-base font-medium"
-                      )}
-                      aria-current={item.current ? "page" : undefined}
-                    >
-                      {item.name}
-                    </Disclosure.Button>
+                    <Link href={item.href}>
+                      <ul>
+                        <li className="containertext-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
+                          {item.name}
+                        </li>
+                      </ul>
+                    </Link>
                   ))}
                 </div>
                 <div className="border-t border-gray-700 pt-4 pb-3">
@@ -171,11 +153,13 @@ export const Header: FC = ({}) => {
                     {userNavigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+                        className="container text-left block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
                       >
-                        {item.name}
+                       <ul>
+                       <Link href={item.href}>
+                          <li className="container">{item.name}</li>
+                        </Link>
+                       </ul>
                       </Disclosure.Button>
                     ))}
                   </div>
