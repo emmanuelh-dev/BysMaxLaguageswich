@@ -14,10 +14,11 @@ const user = {
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
 const navigation = [
+  { name: "About", href: "/about", current: false },
   { name: "Contact", href: "/contact", current: false },
+  { name: "Services", href: "/services", current: false },
   { name: "Calculators", href: "/electronic", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+
   { name: "Reports", href: "#", current: false },
 ];
 const userNavigation = [
@@ -43,7 +44,7 @@ export const Header: FC = ({}) => {
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <Link href="/">
-                        <span className="font-bold text-lg hover:text-blue-700">
+                        <span className="text-white font-bold text-lg hover:text-blue-700">
                           BysMax
                         </span>
                       </Link>

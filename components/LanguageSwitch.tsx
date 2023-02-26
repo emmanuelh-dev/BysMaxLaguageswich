@@ -22,7 +22,7 @@ const LanguageSwitcher = () => {
         id="language-switcher"
         onChange={handleLanguageChange}
         value={i18n.language} // Agregar value para seleccionar el idioma actualmente seleccionado
-        className="px-2 py-1 border border-gray-300 bg-black rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        className="px-2 py-1 border border-gray-300 bg-white text-black dark:text-white dark:bg-black rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
       >
         <option value="en">English</option>
         <option value="es">Español</option>

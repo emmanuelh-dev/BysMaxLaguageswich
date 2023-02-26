@@ -10,7 +10,7 @@ type Props = {
   // Add custom props here
 };
 
-const about = (
+const services = (
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
   const { t } = useTranslation(["homepage"]);
@@ -234,4 +234,4 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
   },
 });
 
-export default about;
+export default services;
