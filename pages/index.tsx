@@ -60,7 +60,8 @@ const index = (
                   "offers": {
                     "@type": "Offer",
                     "priceCurrency": "MXN",
-                    "price": "Precio del producto"
+                    "lowPrice": "1.99,
+                    "highPrice": "99.99",
                   }
                 }
               },
