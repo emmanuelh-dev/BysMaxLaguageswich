@@ -86,24 +86,38 @@ const index = (
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
-                  "name": "${t("homepage:redes")}"
-                },
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "priceCurrency": "MXN"
+                  "name": "${t("homepage:redes")}",
+                  "description": "${t("homepage:redesDescription")}",
+                  "image": "https://www.bysmax.com/img/pc.png",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "BysMax"
+                  },
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "MXN",
+                    "price": "2000"
+                  }
                 }
               },
               {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
-                  "name": "${t("homepage:others")}"
-                },
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "priceCurrency": "MXN"
+                  "name": "${t("homepage:others")}",
+                  "description": "${t("homepage:othersDescription")}",
+                  "image": "https://www.bysmax.com/img/othes.png",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "BysMax"
+                  },
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "MXN",
+                    "price": "6000"
+                  }
                 }
-              }
+              },
             ]
           }
             `,
