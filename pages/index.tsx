@@ -68,11 +68,18 @@ const index = (
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
-                  "name": "${t("homepage:office")}"
-                },
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "priceCurrency": "MXN"
+                  "name": "${t("homepage:office")}",
+                  "description": "${t("homepage:officeDescription")}",
+                  "image": "https://www.bysmax.com/img/mantenimiento.png",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "BysMax"
+                  },
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "MXN",
+                    "price": "250"
+                  }
                 }
               },
               {
