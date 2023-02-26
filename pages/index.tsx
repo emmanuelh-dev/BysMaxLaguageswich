@@ -23,10 +23,10 @@ const index = (
           {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": t("homepage:title"),
-            "description": t("homepage:description"),
-            "url": "https://www.example.com",
-            "logo": "https://www.example.com/logo.png",
+            "name": "${t("title")}",
+            "description": "${t("homepage:description")}",
+            "url": "https://www.bysmax.com",
+            "logo": "https://www.bysmax.com/logo.png",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Athos 112, Fovissste La Talaverna",
@@ -50,7 +50,7 @@ const index = (
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
-                  "name": t("homepage:components")
+                  "name": "${t("homepage:components")}"
                 },
                 "priceSpecification": {
                   "@type": "PriceSpecification",
@@ -61,7 +61,7 @@ const index = (
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
-                  "name": t("homepage:office")
+                  "name": "${t("homepage:office")}"
                 },
                 "priceSpecification": {
                   "@type": "PriceSpecification",
@@ -72,7 +72,7 @@ const index = (
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
-                  "name": t("homepage:redes")
+                  "name": "${t("homepage:redes")}"
                 },
                 "priceSpecification": {
                   "@type": "PriceSpecification",
@@ -83,7 +83,7 @@ const index = (
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
-                  "name": "t("homepage:others")"
+                  "name": "${t("homepage:others")}"
                 },
                 "priceSpecification": {
                   "@type": "PriceSpecification",
