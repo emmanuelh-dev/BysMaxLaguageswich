@@ -16,6 +16,85 @@ const index = (
   const { t } = useTranslation(["homepage"]);
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": t("homepage:title"),
+            "description": t("homepage:description"),
+            "url": "https://www.example.com",
+            "logo": "https://www.example.com/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Athos 112, Fovissste La Talaverna",
+              "addressLocality": "City",
+              "postalCode": "67110",
+              "addressCountry": "Guadalupe"
+            },
+            "telephone": "+518126060795",
+            "openingHours": "Mo-Fr 09:00-18:00",
+            "priceRange": "$$",
+            "servesCuisine": "Electronics",
+            "serviceArea": "Local",
+            "hasMap": "https://goo.gl/maps/MdTSSHgHrgQ3j9dy6",
+            "sameAs": [
+              "https://www.facebook.com/bysmax",
+              "https://www.instagram.com/bysmax1",
+              "https://www.tiktok.com/@bysmax"
+            ],
+            "makesOffer": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": t("homepage:components")
+                },
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "MXN"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": t("homepage:office")
+                },
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "MXN"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": t("homepage:redes")
+                },
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "MXN"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "t("homepage:others")"
+                },
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "priceCurrency": "MXN"
+                }
+              }
+            ]
+          }
+            `,
+        }}
+      ></script>
       <Layout
         title={t("homepage:title")}
         description={t("homepage:description")}
@@ -36,10 +115,10 @@ const index = (
             <div className="flex justify-center items-center justify-items-center">
               <div className="max-w-sm flex flex-col ">
                 <p className="text-2xl text-blue-600 py-4 font-medium ">
-                {t("homepage:components")}
+                  {t("homepage:components")}
                 </p>
                 <p className="text-lg dark:text-white text-black">
-                {t("homepage:componentsDescription")}
+                  {t("homepage:componentsDescription")}
                 </p>
               </div>
             </div>
@@ -47,10 +126,10 @@ const index = (
           <div className=" md:grid md:grid-cols-2 gap-8 justify-around md:my-72 md:py-6 items-center justify-items-center">
             <div className="max-w-sm flex flex-col ">
               <p className="text-2xl text-blue-600 py-4 font-medium ">
-              {t("homepage:office")}
+                {t("homepage:office")}
               </p>
               <p className="text-lg dark:text-white text-black">
-              {t("homepage:officeDescription")}
+                {t("homepage:officeDescription")}
               </p>
             </div>
 
@@ -79,10 +158,10 @@ const index = (
             <div className="flex justify-center items-center justify-items-center">
               <div className="max-w-sm flex flex-col ">
                 <p className="text-2xl text-blue-600 py-4 font-medium ">
-                {t("homepage:redes")}
+                  {t("homepage:redes")}
                 </p>
                 <p className="text-lg dark:text-white text-black">
-                {t("homepage:redesDescription")}
+                  {t("homepage:redesDescription")}
                 </p>
               </div>
             </div>
@@ -91,10 +170,10 @@ const index = (
           <div className="md:grid md:grid-cols-2 gap-8 justify-around md:my-72 md:py-6 items-center justify-items-center">
             <div className="max-w-sm flex flex-col ">
               <p className="text-2xl text-blue-600 py-4 font-medium ">
-              {t("homepage:others")}
+                {t("homepage:others")}
               </p>
               <p className="text-lg dark:text-white text-black">
-              {t("homepage:othersDescription")}
+                {t("homepage:othersDescription")}
               </p>
             </div>
             <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
