@@ -21,7 +21,7 @@ const index = (
         description={t("homepage:description")}
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 justify-around md:my-72  items-center justify-items-center ">
+          <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 gap-8 justify-around md:my-72  items-center justify-items-center ">
             <div className="flex justify-center items-center justify-items-center">
               <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
                 <Image
@@ -36,24 +36,21 @@ const index = (
             <div className="flex justify-center items-center justify-items-center">
               <div className="max-w-sm flex flex-col ">
                 <p className="text-2xl text-blue-600 py-4 font-medium ">
-                  Venta de materiales electrónicos
+                {t("homepage:components")}
                 </p>
                 <p className="text-lg dark:text-white text-black">
-                  En nuestra tienda encontrarás una gran variedad de materiales
-                  electrónicos, como arduinos, transistores, pics, entre otros.
+                {t("homepage:componentsDescription")}
                 </p>
               </div>
             </div>
           </div>
-          <div className=" md:grid md:grid-cols-2 justify-around md:my-72 md:py-6 items-center justify-items-center">
+          <div className=" md:grid md:grid-cols-2 gap-8 justify-around md:my-72 md:py-6 items-center justify-items-center">
             <div className="max-w-sm flex flex-col ">
               <p className="text-2xl text-blue-600 py-4 font-medium ">
-                Mantenimiento de equipos de oficina
+              {t("homepage:office")}
               </p>
               <p className="text-lg dark:text-white text-black">
-                Ofrecemos servicios de mantenimiento para equipos de oficina,
-                como impresoras y computadoras. Además, también vendemos
-                materiales para estos equipos.
+              {t("homepage:officeDescription")}
               </p>
             </div>
 
@@ -67,7 +64,7 @@ const index = (
               />
             </div>
           </div>
-          <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 justify-around md:my-72  items-center justify-items-center ">
+          <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 gap-8 justify-around md:my-72  items-center justify-items-center ">
             <div className="flex justify-center items-center justify-items-center">
               <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
                 <Image
@@ -82,26 +79,22 @@ const index = (
             <div className="flex justify-center items-center justify-items-center">
               <div className="max-w-sm flex flex-col ">
                 <p className="text-2xl text-blue-600 py-4 font-medium ">
-                  Instalaciones de redes
+                {t("homepage:redes")}
                 </p>
                 <p className="text-lg dark:text-white text-black">
-                  Ofrecemos servicios de instalación y configuración de redes,
-                  para que tengas una conexión rápida y estable en tu hogar o
-                  negocio.
+                {t("homepage:redesDescription")}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="md:grid md:grid-cols-2 justify-around md:my-72 md:py-6 items-center justify-items-center">
+          <div className="md:grid md:grid-cols-2 gap-8 justify-around md:my-72 md:py-6 items-center justify-items-center">
             <div className="max-w-sm flex flex-col ">
               <p className="text-2xl text-blue-600 py-4 font-medium ">
-                Otros servicios
+              {t("homepage:others")}
               </p>
               <p className="text-lg dark:text-white text-black">
-                Además de los servicios mencionados, también te ofrecemos
-                hardware a la medida para tu empresa, casa o negocio, cuentas
-                tus necesidades y te diremos que equipo es el mejor para ti.
+              {t("homepage:othersDescription")}
               </p>
             </div>
             <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">

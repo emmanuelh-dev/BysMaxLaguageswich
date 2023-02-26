@@ -1,6 +1,12 @@
 {
-  "title": "prueba español",
-  "description": "Découvrez notre gamme complète de ressources électroniques, de calculatrices et d'autres outils numériques pour amener votre entreprise au niveau de succès suivant.",
-  "h1": "Optimisez vos opérations commerciales avec nos outils numériques",
-  "p": "Chez BysMax, nous proposons une gamme complète de ressources électroniques, de calculatrices et d'autres outils numériques pour vous aider à optimiser l'efficacité de votre entreprise. Que vous ayez besoin de rationaliser vos processus, d'améliorer la communication ou de gérer vos finances, nous avons les outils dont vous avez besoin pour amener votre entreprise au niveau de succès suivant. Explorez nos offres dès aujourd'hui et voyez comment nous pouvons aider votre entreprise à croître."
+  "title": "Venta de materiales electrónicos y servicios de mantenimiento de equipos de oficina",
+  "description": "Somos una tienda de electrónica que ofrece venta de materiales electrónicos, mantenimiento de equipos de oficina, instalaciones de redes y hardware a la medida para tu empresa, casa o negocio.",
+  "components":"Venta de materiales electrónicos",
+  "componentsDescription":"En nuestra tienda encontrarás una gran variedad de materiales electrónicos, como arduinos, transistores, pics, entre otros.",
+  "office":"Mantenimiento de equipos de oficina",
+  "officeDescription":"Ofrecemos servicios de mantenimiento para equipos de oficina,como impresoras y computadoras. Además, también vendemosmateriales para estos equipos.",
+  "redes":"Instalaciones de redes",
+  "redesDescription":"Ofrecemos servicios de instalación y configuración de redes, para que tengas una conexión rápida y estable en tu hogar o negocio.",
+  "others":"Otros servicios",
+  "othersDescription":"Además de los servicios mencionados, también te ofrecemos hardware a la medida para tu empresa, casa o negocio, cuentas tus necesidades y te diremos que equipo es el mejor para ti."
 }

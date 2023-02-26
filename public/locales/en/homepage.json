@@ -1,6 +1,12 @@
 {
-  "title": "prueba ingles",
-  "description": "Discover our comprehensive suite of electronic resources and calculators, as well as other digital tools, to take your business to the next level of success.",
-  "h1": "Streamline Your Business Operations with our Digital Tools",
-  "p": "At BysMax, we offer a complete suite of electronic resources, calculators, and other digital tools to help your business operate more efficiently. Whether you need to streamline processes, improve communication, or manage your finances, we have the tools you need to take your business to the next level of success. Explore our offerings today and see how we can help your business grow."
+  "title": "Sale of Electronic Materials and Office Equipment Maintenance Services",
+  "description": "We are an electronics store that offers the sale of electronic materials, maintenance services for office equipment, network installations, and custom hardware for your company, home, or business.",
+  "components":"Sale of electronic materials",
+  "componentsDescription":"In our store, you will find a wide variety of electronic materials, such as arduinos, transistors, pics, among others.",
+  "office":"Office equipment maintenance",
+  "officeDescription":"We offer maintenance services for office equipment, such as printers and computers. Additionally, we also sell materials for these equipments.",
+  "redes":"Network installations",
+  "redesDescription":"We offer installation and configuration services for networks, so you can have a fast and stable connection in your home or business.",
+  "others":"Other services",
+  "othersDescription":"In addition to the aforementioned services, we also offer custom hardware for your company, home, or business. Tell us your needs and we will tell you which equipment is best for you."
   }
