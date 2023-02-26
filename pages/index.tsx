@@ -20,19 +20,21 @@ const index = (
         title={t("homepage:title")}
         description={t("homepage:description")}
       >
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8">
-            <div className="max-sm:flex max-sm:flex-col-reverse">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 justify-around md:my-72  items-center justify-items-center ">
+            <div className="flex justify-center items-center justify-items-center">
               <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
                 <Image
-                  width={256 * 1.3}
-                  height={171 * 1.3}
+                  width={400}
+                  height={600}
                   className="object-cover rounded-xl"
                   src="/media/material.jpg"
-                  alt="Venta de materiales electrónicos"
+                  alt="Instalaciones de redes"
                 />
               </div>
-              <div className="max-w-sm flex flex-col justify-center">
+            </div>
+            <div className="flex justify-center items-center justify-items-center">
+              <div className="max-w-sm flex flex-col ">
                 <p className="text-2xl text-blue-600 py-4 font-medium ">
                   Venta de materiales electrónicos
                 </p>
@@ -42,39 +44,43 @@ const index = (
                 </p>
               </div>
             </div>
-            <div>
-              <div className="max-w-sm flex flex-col justify-center">
-                <p className="text-2xl text-blue-600 py-4 font-medium ">
-                  Mantenimiento de equipos de oficina
-                </p>
-                <p className="text-lg dark:text-white text-black">
-                  Ofrecemos servicios de mantenimiento para equipos de oficina,
-                  como impresoras y computadoras. Además, también vendemos
-                  materiales para estos equipos.
-                </p>
-              </div>
-
-              <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
-                <Image
-                  width={256 * 1.3}
-                  height={171 * 1.3}
-                  className="object-cover rounded-xl"
-                  src="/media/mantenimiento.png"
-                  alt="Instalaciones de redes"
-                />
-              </div>
+          </div>
+          <div className=" md:grid md:grid-cols-2 justify-around md:my-72 md:py-6 items-center justify-items-center">
+            <div className="max-w-sm flex flex-col ">
+              <p className="text-2xl text-blue-600 py-4 font-medium ">
+                Mantenimiento de equipos de oficina
+              </p>
+              <p className="text-lg dark:text-white text-black">
+                Ofrecemos servicios de mantenimiento para equipos de oficina,
+                como impresoras y computadoras. Además, también vendemos
+                materiales para estos equipos.
+              </p>
             </div>
-            <div className="max-sm:flex max-sm:flex-col-reverse">
+
+            <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
+              <Image
+                width={400}
+                height={600}
+                className="object-cover rounded-xl"
+                src="/media/mantenimiento.png"
+                alt="Instalaciones de redes"
+              />
+            </div>
+          </div>
+          <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 justify-around md:my-72  items-center justify-items-center ">
+            <div className="flex justify-center items-center justify-items-center">
               <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
                 <Image
-                  width={256 * 1.3}
-                  height={171 * 1.3}
+                  width={400}
+                  height={600}
                   className="object-cover rounded-xl"
                   src="/media/redes.png"
                   alt="Instalaciones de redes"
                 />
               </div>
-              <div className="max-w-sm flex flex-col justify-center">
+            </div>
+            <div className="flex justify-center items-center justify-items-center">
+              <div className="max-w-sm flex flex-col ">
                 <p className="text-2xl text-blue-600 py-4 font-medium ">
                   Instalaciones de redes
                 </p>
@@ -85,8 +91,10 @@ const index = (
                 </p>
               </div>
             </div>
-      <div>
-      <div className="max-w-sm flex flex-col justify-center">
+          </div>
+
+          <div className="md:grid md:grid-cols-2 justify-around md:my-72 md:py-6 items-center justify-items-center">
+            <div className="max-w-sm flex flex-col ">
               <p className="text-2xl text-blue-600 py-4 font-medium ">
                 Otros servicios
               </p>
@@ -98,14 +106,13 @@ const index = (
             </div>
             <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
               <Image
-                width={256 * 1.3}
-                height={171 * 1.3}
+                width={400}
+                height={600}
                 className="object-cover rounded-xl"
                 src="/media/pc.png"
                 alt="Instalaciones de redes"
               />
             </div>
-      </div>
           </div>
         </div>
       </Layout>
