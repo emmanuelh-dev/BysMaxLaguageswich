@@ -52,14 +52,16 @@ const index = (
                   "@type": "Product",
                   "name": "${t("homepage:components")}",
                   "description": "${t("homepage:componentsDescription")}",
-                  "image": "bysmax.com/media/components.jpg",
+                  "image": "https://www.bysmax.com/img/components.jpg",
                   "brand": {
                     "@type": "Brand",
-                    "name": "Nombre de la marca"
+                    "name": "BysMax"
                   },
-                "priceSpecification": {
-                  "@type": "PriceSpecification",
-                  "priceCurrency": "MXN"
+                  "offers": {
+                    "@type": "Offer",
+                    "priceCurrency": "MXN",
+                    "price": "Precio del producto"
+                  }
                 }
               },
               {
