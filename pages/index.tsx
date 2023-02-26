@@ -50,8 +50,13 @@ const index = (
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Product",
-                  "name": "${t("homepage:components")}"
-                },
+                  "name": "${t("homepage:components")}",
+                  "description": "${t("homepage:componentsDescription")}",
+                  "image": "bysmax.com/media/components.jpg",
+                  "brand": {
+                    "@type": "Brand",
+                    "name": "Nombre de la marca"
+                  },
                 "priceSpecification": {
                   "@type": "PriceSpecification",
                   "priceCurrency": "MXN"
