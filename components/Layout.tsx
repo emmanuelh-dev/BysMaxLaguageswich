@@ -27,22 +27,9 @@ export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
             <meta name="description" content={description} />
             <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
             <link rel="shortcut icon" href="/favicon.ico" />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: `
-              {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "url": "http://www.bysmax.com",
-                "logo": "https://www.bysmax.com/logo.svg"
-              }
-            `,
-              }}
-            ></script>
+            <link rel="sitemap" type="application/xml" href="/sitemapes.xml" />
+            <link rel="sitemap" type="application/xml" href="/sitemapfr.xml" />
           </Head>
-          
-
           {children}
           <Footer />
           <div className="flex items-center justify-center"></div>
