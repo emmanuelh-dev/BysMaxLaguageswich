@@ -33,6 +33,81 @@ const electronic = (
   console.log(t("electronic:lang"))
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white">
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `
+          [  {    "@context": "https://schema.org",    "@type": "BreadcrumbList",    "itemListElement": [      {        "@type": "ListItem",        "position": 1,        "name": "Electronic",        "item": "/electronic"      },      {        "@type": "ListItem",        "position": 2,        "name": "Calculadora de Ley de Ohm",        "item": "/electronic/ohmlawcalculator"      }    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Calculadoras de electrónica",
+    "description": "Con estas calculadoras podrás calcular voltaje, corriente, resistencia y potencia utilizando la Ley de Ohm, la capacitancia, el voltaje o la carga almacenada en un capacitor, y el valor de la resistencia de una resistencia a partir de su código de colores.",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "${t("title")}",
+        "description": "Calcula voltaje, corriente, resistencia y potencia utilizando la Ley de Ohm.",
+        "url": "/electronic/ohmlawcalculator",
+        "image": "/ohm.png"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculadora de Capacitores",
+        "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+        "url": "/electronic/capacitorcalculator",
+        "image": "/ohm.png"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Código de Colores de Resistencias",
+        "description": "Encuentra el valor de la resistencia de una resistencia a partir de su código de colores.",
+        "url": "/electronic/resistorcolorcode",
+        "image": "/ohm.png"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Resistencias en Paralelo",
+        "description": "Encuentra la resistencia.",
+        "url": "/electronic/resistorcolorcode",
+        "image": "/ohm.png"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Resistencias en Serie",
+        "description": "Encuentra la resistencia.",
+        "url": "/electronic/resistorcolorcode",
+        "image": "/ohm.png"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Calculadora de Capacitores",
+        "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+        "url": "/electronic/capacitorcalculator",
+        "image": "/ohm.png"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Calculadora de Capacitores",
+        "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+        "url": "/electronic/capacitorcalculator",
+        "image": "/ohm.png"
+      }
+    ]
+  }
+]
+
+            `,
+        }}
+      ></script>
       <Layout title={t("electronic:title")} description={t("electronic:description")}>
       <div className="items-center justify-between container mx-auto max-w-7xl w-full p-6">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-blue-700">{t("electronic:h1")}</h1>
