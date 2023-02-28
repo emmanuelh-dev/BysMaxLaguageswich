@@ -3,45 +3,45 @@
     "name": "Ohm's Law Calculator",
     "description": "Calculate voltage, current, resistance and power using Ohm's Law.",
     "link": "/electronic/ohmlawcalculator",
-    "image": "/ohm.png"
+    "image": "/media/ohm.png"
   },
   {
     "name": "Capacitor Calculator",
     "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
     "link": "/electronic/capacitorcalculator",
-    "image": "/ohm.png"
+    "image": "/media/capacitance.png"
   },
   {
     "name": "Resistor Color Code",
     "description": "Find the resistance value of a resistor from its color code.",
     "link": "/electronic/resistorcolorcode",
-    "image": "/ohm.png"
+    "image": "/media/resistor.png"
 
   },
   {
     "name": "Resistor paralell",
     "description": "Find the resistance.",
     "link": "/electronic/resistorcolorcode",
-    "image": "/ohm.png"
+    "image": "/media/capacitance.png"
 
   },
   {
     "name": "Resistor serie",
     "description": "Find the resistance ",
     "link": "/electronic/resistorcolorcode",
-    "image": "/ohm.png"
+    "image": "/media/capacitance.png"
 
   },
   {
     "name": "Capacitor Calculator",
     "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
     "link": "/electronic/capacitorcalculator",
-    "image": "/ohm.png"
+    "image": "/media/capacitance.png"
   },
   {
     "name": "Capacitor Calculator",
     "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
     "link": "/electronic/capacitorcalculator",
-    "image": "/ohm.png"
+    "image": "/media/capacitance.png"
   }
 ]

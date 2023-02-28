@@ -1,47 +1,44 @@
 [
   {
-  "name": "Calculadora de Ley de Ohm",
-  "description": "Calcula voltaje, corriente, resistencia y potencia utilizando la Ley de Ohm.",
-  "link": "/electronic/ohmlawcalculator",
-  "image": "/ohm.png"
+    "name": "Calculadora de Ley de Ohm",
+    "description": "Calcula voltaje, corriente, resistencia y potencia utilizando la Ley de Ohm.",
+    "link": "/electronic/ohmlawcalculator",
+    "image": "/media/ohm.png"
   },
   {
-  "name": "Calculadora de Capacitores",
-  "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
-  "link": "/electronic/capacitorcalculator",
-  "image": "/ohm.png"
+    "name": "Calculadora de Capacitores",
+    "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/media/capacitance.png"
   },
   {
-  "name": "Código de Colores de Resistencias",
-  "description": "Encuentra el valor de la resistencia de una resistencia a partir de su código de colores.",
-  "link": "/electronic/resistorcolorcode",
-  "image": "/ohm.png"
-  
+    "name": "Código de Colores de Resistencias",
+    "description": "Encuentra el valor de la resistencia de una resistencia a partir de su código de colores.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/resistor.png"
   },
   {
-  "name": "Resistencias en Paralelo",
-  "description": "Encuentra la resistencia.",
-  "link": "/electronic/resistorcolorcode",
-  "image": "/ohm.png"
-  
+    "name": "Resistencias en Paralelo",
+    "description": "Encuentra la resistencia.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/capacitance.png"
   },
   {
-  "name": "Resistencias en Serie",
-  "description": "Encuentra la resistencia.",
-  "link": "/electronic/resistorcolorcode",
-  "image": "/ohm.png"
-  
+    "name": "Resistencias en Serie",
+    "description": "Encuentra la resistencia.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/capacitance.png"
   },
   {
-  "name": "Calculadora de Capacitores",
-  "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
-  "link": "/electronic/capacitorcalculator",
-  "image": "/ohm.png"
+    "name": "Calculadora de Capacitores",
+    "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/media/capacitance.png"
   },
   {
-  "name": "Calculadora de Capacitores",
-  "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
-  "link": "/electronic/capacitorcalculator",
-  "image": "/ohm.png"
+    "name": "Calculadora de Capacitores",
+    "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/media/capacitance.png"
   }
-  ]
+]

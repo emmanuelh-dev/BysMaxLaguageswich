@@ -1,42 +1,38 @@
 [
   {
-  "name": "Calculateur de Loi d'Ohm",
-  "description": "Calculez la tension, le courant, la résistance et la puissance à l'aide de la loi d'Ohm.",
-  "link": "/electronic/ohmlawcalculator",
-  "image": "/ohm.png"
+    "name": "Calculateur de Loi d'Ohm",
+    "description": "Calculez la tension, le courant, la résistance et la puissance à l'aide de la loi d'Ohm.",
+    "link": "/electronic/ohmlawcalculator",
+    "image": "/media/ohm.png"
   },
   {
-  "name": "Calculateur de Condensateur",
-  "description": "Calculez la capacitance, la tension ou la charge stockée sur un condensateur.",
-  "link": "/electronic/capacitorcalculator",
-  "image": "/ohm.png"
+    "name": "Calculateur de Condensateur",
+    "description": "Calculez la capacitance, la tension ou la charge stockée sur un condensateur.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/media/capacitance.png"
   },
   {
-  "name": "Code de Couleur des Résistances",
-  "description": "Trouvez la valeur de la résistance d'une résistance à partir de son code de couleurs.",
-  "link": "/electronic/resistorcolorcode",
-  "image": "/ohm.png"
-  
+    "name": "Code de Couleur des Résistances",
+    "description": "Trouvez la valeur de la résistance d'une résistance à partir de son code de couleurs.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/resistor.png"
   },
   {
-  "name": "Résistances en Parallèle",
-  "description": "Trouvez la résistance.",
-  "link": "/electronic/resistorcolorcode",
-  "image": "/ohm.png"
-  
-  },
-  {
-  "name": "Résistances en Série",
-  "description": "Trouvez la résistance.",
-  "link": "/electronic/resistorcolorcode",
-  "image": "/ohm.png"
-  
+    "name": "Résistances en Parallèle",
+    "description": "Trouvez la résistance.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/capacitance.png"
   },
   {
     "name": "Résistances en Série",
     "description": "Trouvez la résistance.",
     "link": "/electronic/resistorcolorcode",
-    "image": "/ohm.png"
-    
-    }
-  ]
+    "image": "/media/capacitance.png"
+  },
+  {
+    "name": "Résistances en Série",
+    "description": "Trouvez la résistance.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/capacitance.png"
+  }
+]

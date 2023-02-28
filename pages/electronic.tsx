@@ -6,9 +6,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { CalculatorsComponent } from "components/CalculatorsComponent";
 import { Layout } from "components/Layout";
-
+import Image from "next/image";
 function getTranslations(lang: string) {
-  switch(lang) {
+  switch (lang) {
     case "fr":
       return require("/public/locales/fr/calcs.json");
     case "es":
@@ -19,8 +19,6 @@ function getTranslations(lang: string) {
   }
 }
 
-
-
 type Props = {
   // Add custom props here
 };
@@ -30,10 +28,10 @@ const electronic = (
 ) => {
   const { t } = useTranslation(["electronic"]);
   const calculators = getTranslations(t("electronic:lang"));
-  console.log(t("electronic:lang"))
+  console.log(t("electronic:lang"));
   return (
     <div className="bg-white text-black dark:bg-black dark:text-white">
-            <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: `
@@ -108,34 +106,52 @@ const electronic = (
             `,
         }}
       ></script>
-      <Layout title={t("electronic:title")} description={t("electronic:description")}>
-      <div className="items-center justify-between container mx-auto max-w-7xl w-full p-6">
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-blue-700">{t("electronic:h1")}</h1>
-        <p className="text-lg md:text-xl">{t("electronic:p")}</p>
-      </div>
-
-      <div className="flex items-center justify-between container mx-auto max-w-7xl w-full p-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          {calculators.map((calculator:{ name: string, link:string, description:string }) => (
-            <div
-              key={calculator.name}
-              className=" border-xl rounded-lg bg-white p-4 shadow-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
-            >
-              <Link href={calculator.link}>
-                <span>
-                  <h2 className="text-xl font-semibold mb-4 text-blue-600">
-                    {calculator.name}
-                  </h2>
-                  <p className="text-neutral-800 ">
-                    {calculator.description}
-                  </p>
-                </span>
-              </Link>
-            </div>
-          ))}
+      <Layout
+        title={t("electronic:title")}
+        description={t("electronic:description")}
+      >
+        <div className="items-center justify-between container mx-auto max-w-7xl w-full p-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-blue-700">
+            {t("electronic:h1")}
+          </h1>
+          <p className="text-lg md:text-xl">{t("electronic:p")}</p>
         </div>
-      </div>
-      <CalculatorsComponent />
+
+        <div className="flex items-center justify-between container mx-auto max-w-7xl w-full p-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {calculators.map(
+              (calculator: {
+                name: string;
+                link: string;
+                description: string;
+                image: string;
+              }) => (
+                <div
+                  key={calculator.name}
+                  className=" border-xl rounded-lg dark:bg-neutral-900 p-4 shadow-lg  transition duration-500 ease-in-out transform hover:-translate-y-4 hover:shadow-lg"
+                >
+                  <Link href={calculator.link}>
+                    <span>
+                      <Image
+                        width={300}
+                        height={300}
+                        src={calculator.image}
+                        alt=""
+                      />
+                      <h2 className="text-xl text-center font-semibold mb-4 text-blue-600">
+                        {calculator.name}
+                      </h2>
+                      <p className="dark:text-neutral-100 text-center">
+                        {calculator.description}
+                      </p>
+                    </span>
+                  </Link>
+                </div>
+              )
+            )}
+          </div>
+        </div>
+        <CalculatorsComponent />
       </Layout>
     </div>
   );
