@@ -36,7 +36,7 @@ export const Header: FC = ({}) => {
   return (
     <header>
       <div className="min-h-full">
-        <Disclosure as="nav" className="dark:bg-black">
+        <Disclosure as="nav">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export const Header: FC = ({}) => {
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
                       <Link href="/">
-                        <span className="text-white font-bold text-lg hover:text-blue-700">
+                        <span className="dark:text-white text-black font-bold text-lg hover:text-blue-600">
                           BysMax
                         </span>
                       </Link>
@@ -53,7 +53,7 @@ export const Header: FC = ({}) => {
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
                           <Link href={item.href}>
-                            <span className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                            <span className="dark:text-white text-black hover:bg-neutral-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                               {item.name}
                             </span>
                           </Link>
@@ -66,8 +66,8 @@ export const Header: FC = ({}) => {
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
                         <div>
-                          <Menu.Button className="flex max-w-xs items-center rounded dark:bg-black focus:outline-none hover:bg-gray-900 text-sm font-semibold">
-                            <span className="px-3 py-2">
+                          <Menu.Button className="flex max-w-xs items-center rounded-md focus:outline-none hover:bg-neutral-600 hover:text-white  text-sm font-semibold">
+                            <span className="px-3 py-2 ">
                               {t("navbar.name")}
                             </span>
                           </Menu.Button>
@@ -81,15 +81,15 @@ export const Header: FC = ({}) => {
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
                         >
-                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
                                   <Link href={item.href}>
                                     <span
                                       className={classNames(
-                                        active ? "bg-gray-100" : "",
-                                        "block px-4 py-2 text-sm text-gray-700"
+                                        active ? "bg-neutral-100" : "",
+                                        "block px-4 py-2 text-sm text-neutral-600"
                                       )}
                                     >
                                       {item.name}
@@ -105,7 +105,7 @@ export const Header: FC = ({}) => {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md dark:bg-black p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-neutral-400 hover:bg-neutral-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-800">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XMarkIcon
@@ -128,23 +128,23 @@ export const Header: FC = ({}) => {
                   {navigation.map((item) => (
                     <Link href={item.href}>
                       <ul>
-                        <li className="containertext-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
+                        <li className="containertext-neutral-300 hover:bg-neutral-600 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
                           {item.name}
                         </li>
                       </ul>
                     </Link>
                   ))}
                 </div>
-                <div className="border-t border-gray-700 pt-4 pb-3">
+                <div className="border-t border-neutral-600 pt-4 pb-3">
                   <div className="flex items-center px-2">
                     <div className="ml-3">
-                      <div className="text-base font-medium leading-none text-white">
+                      <div className="text-base font-medium leading-none text-black dark:text-white">
                         {user.name}
                       </div>
                     </div>
                     <button
                       type="button"
-                      className="ml-auto flex-shrink-0 rounded-full dark:bg-black p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      className="ml-auto flex-shrink-0 rounded-full p-1 text-neutral-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-800"
                     >
                       <span className="sr-only">View notifications</span>
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
@@ -154,7 +154,7 @@ export const Header: FC = ({}) => {
                     {userNavigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
-                        className="container text-left block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
+                        className="container text-left block rounded-md px-3 py-2 text-base font-medium hover:bg-neutral-600 hover:text-white"
                       >
                        <ul>
                        <Link href={item.href}>

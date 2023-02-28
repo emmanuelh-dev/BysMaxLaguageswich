@@ -136,7 +136,7 @@ const services = (
                   height={600}
                   className="object-cover rounded-xl"
                   src="/media/material.jpg"
-                  alt="Instalaciones de redes"
+                  alt="Venta de material electronico en fime"
                 />
               </div>
             </div>
