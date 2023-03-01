@@ -127,6 +127,7 @@ const index = (
         title={t("homepage:title")}
         description={t("homepage:description")}
       >
+        <h1 className="text-blue-700">{t("homepage:title")}</h1>
         <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 gap-8 justify-around md:my-72  items-center justify-items-center ">
           <div className="flex justify-center items-center justify-items-center">
             <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
