@@ -142,9 +142,9 @@ const index = (
           </div>
           <div className="flex justify-center items-center justify-items-center">
             <div className="max-w-sm flex flex-col ">
-              <p className="text-2xl text-blue-600 py-4 font-medium ">
+              <h2 className="text-2xl text-blue-600 py-4 font-bold ">
                 {t("homepage:components")}
-              </p>
+              </h2>
               <p className="text-lg dark:text-white text-black">
                 {t("homepage:componentsDescription")}
               </p>
@@ -153,9 +153,9 @@ const index = (
         </div>
         <div className=" md:grid md:grid-cols-2 gap-8 justify-around md:my-72 md:py-6 items-center justify-items-center">
           <div className="max-w-sm flex flex-col ">
-            <p className="text-2xl text-blue-600 py-4 font-medium ">
+            <h2 className="text-2xl text-blue-600 py-4 font-bold ">
               {t("homepage:office")}
-            </p>
+            </h2>
             <p className="text-lg dark:text-white text-black">
               {t("homepage:officeDescription")}
             </p>
@@ -185,9 +185,9 @@ const index = (
           </div>
           <div className="flex justify-center items-center justify-items-center">
             <div className="max-w-sm flex flex-col ">
-              <p className="text-2xl text-blue-600 py-4 font-medium ">
+              <h2 className="text-2xl text-blue-600 py-4 font-bold ">
                 {t("homepage:redes")}
-              </p>
+              </h2>
               <p className="text-lg dark:text-white text-black">
                 {t("homepage:redesDescription")}
               </p>
@@ -196,9 +196,9 @@ const index = (
         </div>
         <div className="md:grid md:grid-cols-2 gap-8 justify-around md:my-72 md:py-6 items-center justify-items-center">
           <div className="max-w-sm flex flex-col ">
-            <p className="text-2xl text-blue-600 py-4 font-medium ">
+            <h2 className="text-2xl text-blue-600 py-4 font-bold ">
               {t("homepage:others")}
-            </p>
+            </h2>
             <p className="text-lg dark:text-white text-black">
               {t("homepage:othersDescription")}
             </p>

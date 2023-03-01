@@ -1,5 +1,12 @@
 {
   "copy":"© 2023 BysMax. All rights reserved.",
   "calculator":["/electronic/ohm","/electronic/home"],
-  "title":"Footer"
+  "title":"Footer",
+  "facebook": "Link to Facebook",
+  "instagram": "Link to Facebook",
+  "twitter": "Link to Facebook"
+
+
+
+
 }
