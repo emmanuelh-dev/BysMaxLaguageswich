@@ -1,0 +1,25 @@
+{
+  "title": "Kontaktieren Sie uns - bysmax",
+  "description": "Nehmen Sie mit uns Kontakt auf, wenn Sie Fragen oder Kommentare haben.",
+  "h1": "Kontaktieren Sie uns",
+  "p": "Wenn Sie Fragen oder Kommentare haben, können Sie uns gerne über das untenstehende Formular kontaktieren. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+  "sorry":"Derzeit ist der Service deaktiviert, aber Sie können uns gerne unter der folgenden E-Mail-Adresse kontaktieren:",
+  "form": {
+  "name": {
+  "label": "Name",
+  "placeholder": "Geben Sie Ihren Namen ein",
+  "required": true
+  },
+  "email": {
+  "label": "E-Mail",
+  "placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+  "required": true
+  },
+  "message": {
+  "label": "Nachricht",
+  "placeholder": "Geben Sie hier Ihre Nachricht ein",
+  "required": true
+  },
+  "submit": "Senden"
+  }
+  }

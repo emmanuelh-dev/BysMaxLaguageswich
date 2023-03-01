@@ -1,0 +1,17 @@
+{
+  "navbar": {
+  "name": "Rechner",
+  "calc1": "Ohm Rechner"
+  },
+  "navigation": [
+  { "name": "Kontakt", "href": "/contact", "current": false },
+  { "name": "Team", "href": "#", "current": false },
+  { "name": "Projekte", "href": "#", "current": false },
+  { "name": "Kalender", "href": "#", "current": false },
+  { "name": "Berichte", "href": "#", "current": false }
+  ],
+  "userNavigation": [
+  { "name": "Alle", "href": "/electronic" },
+  { "name": "Einstellungen", "href": "#" }
+  ]
+  }

@@ -13,6 +13,8 @@ function getTranslations(lang: string) {
       return require("/public/locales/fr/calcs.json");
     case "es":
       return require("/public/locales/es/calcs.json");
+      case "de":
+      return require("/public/locales/de/calcs.json");
     // Agrega más casos según los idiomas que necesites soportar
     default:
       return require("/public/locales/en/calcs.json");

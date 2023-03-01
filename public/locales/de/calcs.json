@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Ohm's Law Calculator",
+    "description": "Berechnen Sie Spannung, Strom, Widerstand und Leistung mit dem Ohmschen Gesetz.",
+    "link": "/electronic/ohmlawcalculator",
+    "image": "/media/ohm.png"
+  },
+  {
+    "name": "Kondensatorrechner",
+    "description": "Berechnen Sie die Kapazität, Spannung oder Ladung auf einem Kondensator.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/media/capacitance.png"
+  },
+  {
+    "name": "Widerstand Farbcode",
+    "description": "Finden Sie den Widerstandswert eines Widerstands aus seinem Farbcode.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/resistor.png"
+  },
+  {
+    "name": "Widerstand in Parallel",
+    "description": "Finden Sie den Widerstand.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/capacitance.png"
+  },
+  {
+    "name": "Widerstand in Serie",
+    "description": "Finden Sie den Widerstand.",
+    "link": "/electronic/resistorcolorcode",
+    "image": "/media/capacitance.png"
+  },
+  {
+    "name": "Kondensatorrechner",
+    "description": "Berechnen Sie die Kapazität, Spannung oder Ladung auf einem Kondensator.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/media/capacitance.png"
+  },
+  {
+    "name": "Kondensatorrechner",
+    "description": "Berechnen Sie die Kapazität, Spannung oder Ladung auf einem Kondensator.",
+    "link": "/electronic/capacitorcalculator",
+    "image": "/media/capacitance.png"
+  }
+]
