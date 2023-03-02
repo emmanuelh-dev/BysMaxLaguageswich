@@ -20,6 +20,7 @@ const title =
 const calculator =
   "A capacitance calculator is a tool that helps you calculate the capacitance of a capacitor based on its physical dimensions and the material between its plates. Capacitance is a measure of a capacitor's ability to store an electric charge. ";
 const calcuator2 =
+  "It is determined by the distance between the capacitor's plates, the area of the plates, and the dielectric constant of the material between the plates. By inputting these values into the capacitance calculator, you can determine the capacitance of the capacitor.";
 
 const ohmlawcalculator = (
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
