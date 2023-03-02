@@ -1,7 +1,6 @@
 import type { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
 import { Analytics } from '@vercel/analytics/react';
-
 import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
 // import nextI18NextConfig from '../next-i18next.config.js'
