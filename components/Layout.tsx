@@ -23,6 +23,7 @@ export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="sitemap" type="application/xml" href="/sitemapes.xml" />
         <link rel="sitemap" type="application/xml" href="/sitemapfr.xml" />
+        <link rel="shortcut icon" href="/icon.jpg" />
       </Head>
       <div className="bg-white text-black dark:bg-black dark:text-white">
         <div className="container mx-auto px-4mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
