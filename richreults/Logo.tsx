@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 interface Logoprops {
   title: string;
   description: string;
-  url:string;
   category:string;
   image:string;
+  baseUrl:string;
 }
 
-
-export const Logo = ({ title, description, url,  category, image, }: Logoprops) => {
+export const Logo = ({ title, description, category, image, baseUrl }: Logoprops) => {
+  const { i18n } = useTranslation();
+  const url = `http://bysmax.com/${i18n.language}/${baseUrl}`;
   return (
     <script
       type="application/ld+json"

@@ -8,33 +8,34 @@
 
 
 <url>
-  <loc>https://www.bysmax.com/en</loc>
-  <lastmod>2023-02-26T05:50:06+00:00</lastmod>
+  <loc>https://www.bysmax.com/fr</loc>
+  <lastmod>2023-02-26T05:51:10+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.bysmax.com/en/contact</loc>
+  <loc>https://www.bysmax.com/fr/contact</loc>
+  <lastmod>2023-02-26T05:51:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bysmax.com/fr/electronic</loc>
   <lastmod>2023-02-26T05:50:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.bysmax.com/electronic</loc>
+  <loc>https://www.bysmax.com/de/electronic/capacitorcalculator</loc>
   <lastmod>2023-02-26T05:50:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.bysmax.com/en/electronic/capacitorcalculator</loc>
+  <loc>https://www.bysmax.com/fr/about</loc>
   <lastmod>2023-02-26T05:50:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.bysmax.com/en/about</loc>
+  <loc>https://www.bysmax.com/fr/services</loc>
   <lastmod>2023-02-26T05:50:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://www.bysmax.com/en/services</loc>
-  <lastmod>2023-02-26T05:50:06+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+
 </urlset>

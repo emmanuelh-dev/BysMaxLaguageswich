@@ -4,6 +4,7 @@
     "description": "Berechnen Sie Spannung, Strom, Widerstand und Leistung mit dem Ohmschen Gesetz.",
     "link": "/electronic/ohmlawcalculator",
     "image": "/media/ohm.png"
+    
   },
   {
     "name": "Kondensatorrechner",

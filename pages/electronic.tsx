@@ -7,13 +7,14 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { CalculatorsComponent } from "components/CalculatorsComponent";
 import { Layout } from "components/Layout";
 import Image from "next/image";
+import { Logo } from "richreults/Logo";
 function getTranslations(lang: string) {
   switch (lang) {
     case "fr":
       return require("/public/locales/fr/calcs.json");
     case "es":
       return require("/public/locales/es/calcs.json");
-      case "de":
+    case "de":
       return require("/public/locales/de/calcs.json");
     // Agrega más casos según los idiomas que necesites soportar
     default:
@@ -38,72 +39,72 @@ const electronic = (
         dangerouslySetInnerHTML={{
           __html: `
           [  {    "@context": "https://schema.org",    "@type": "BreadcrumbList",    "itemListElement": [      {        "@type": "ListItem",        "position": 1,        "name": "Electronic",        "item": "/electronic"      },      {        "@type": "ListItem",        "position": 2,        "name": "Calculadora de Ley de Ohm",        "item": "/electronic/ohmlawcalculator"      }    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Calculadoras de electrónica",
-    "description": "Con estas calculadoras podrás calcular voltaje, corriente, resistencia y potencia utilizando la Ley de Ohm, la capacitancia, el voltaje o la carga almacenada en un capacitor, y el valor de la resistencia de una resistencia a partir de su código de colores.",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "${t("title")}",
-        "description": "Calcula voltaje, corriente, resistencia y potencia utilizando la Ley de Ohm.",
-        "url": "/electronic/ohmlawcalculator",
-        "image": "/ohm.png"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Calculadora de Capacitores",
-        "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
-        "url": "/electronic/capacitorcalculator",
-        "image": "/ohm.png"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Código de Colores de Resistencias",
-        "description": "Encuentra el valor de la resistencia de una resistencia a partir de su código de colores.",
-        "url": "/electronic/resistorcolorcode",
-        "image": "/ohm.png"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "Resistencias en Paralelo",
-        "description": "Encuentra la resistencia.",
-        "url": "/electronic/resistorcolorcode",
-        "image": "/ohm.png"
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "name": "Resistencias en Serie",
-        "description": "Encuentra la resistencia.",
-        "url": "/electronic/resistorcolorcode",
-        "image": "/ohm.png"
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "name": "Calculadora de Capacitores",
-        "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
-        "url": "/electronic/capacitorcalculator",
-        "image": "/ohm.png"
-      },
-      {
-        "@type": "ListItem",
-        "position": 7,
-        "name": "Calculadora de Capacitores",
-        "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
-        "url": "/electronic/capacitorcalculator",
-        "image": "/ohm.png"
-      }
-    ]
-  }
-]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                "name": "Calculadoras de electrónica",
+                "description": "Con estas calculadoras podrás calcular voltaje, corriente, resistencia y potencia utilizando la Ley de Ohm, la capacitancia, el voltaje o la carga almacenada en un capacitor, y el valor de la resistencia de una resistencia a partir de su código de colores.",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "${t("title")}",
+                    "description": "Calcula voltaje, corriente, resistencia y potencia utilizando la Ley de Ohm.",
+                    "url": "/electronic/ohmlawcalculator",
+                    "image": "/ohm.png"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Calculadora de Capacitores",
+                    "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+                    "url": "/electronic/capacitorcalculator",
+                    "image": "/ohm.png"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Código de Colores de Resistencias",
+                    "description": "Encuentra el valor de la resistencia de una resistencia a partir de su código de colores.",
+                    "url": "/electronic/resistorcolorcode",
+                    "image": "/ohm.png"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Resistencias en Paralelo",
+                    "description": "Encuentra la resistencia.",
+                    "url": "/electronic/resistorcolorcode",
+                    "image": "/ohm.png"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Resistencias en Serie",
+                    "description": "Encuentra la resistencia.",
+                    "url": "/electronic/resistorcolorcode",
+                    "image": "/ohm.png"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Calculadora de Capacitores",
+                    "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+                    "url": "/electronic/capacitorcalculator",
+                    "image": "/ohm.png"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "name": "Calculadora de Capacitores",
+                    "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
+                    "url": "/electronic/capacitorcalculator",
+                    "image": "/ohm.png"
+                  }
+                ]
+              }
+            ]
 
             `,
         }}
@@ -111,6 +112,7 @@ const electronic = (
       <Layout
         title={t("electronic:title")}
         description={t("electronic:description")}
+        keywords={t("electronic:keywords")}
       >
         <div className="items-center justify-between container mx-auto max-w-7xl w-full p-6">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-blue-700">
@@ -146,6 +148,7 @@ const electronic = (
                       <p className="dark:text-neutral-100 text-center">
                         {calculator.description}
                       </p>
+                      <Logo title={calculator.name} description={calculator.description} baseUrl="" category={"Calculator"} image={calculator.image}/>
                     </span>
                   </Link>
                 </div>

@@ -8,10 +8,11 @@ import Head from "next/head";
 interface LayoutProps {
   title: string;
   description: string;
+  keywords:string;
   children: ReactNode;
 }
 
-export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
+export const Layout: FC<LayoutProps> = ({ children, title, description, keywords }) => {
   const { t } = useTranslation("footer");
   return (
     <>
@@ -19,6 +20,7 @@ export const Layout: FC<LayoutProps> = ({ children, title, description }) => {
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="sitemap" type="application/xml" href="/sitemapes.xml" />
