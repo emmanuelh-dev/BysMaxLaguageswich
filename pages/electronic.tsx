@@ -148,7 +148,7 @@ const electronic = (
                       <p className="dark:text-neutral-100 text-center">
                         {calculator.description}
                       </p>
-                      <Logo title={calculator.name} description={calculator.description} baseUrl="" category={"Calculator"} image={calculator.image}/>
+                      <Logo title={calculator.name} description={calculator.description} baseUrl={calculator.link} category={"Calculator"} image={calculator.image}/>
                     </span>
                   </Link>
                 </div>
