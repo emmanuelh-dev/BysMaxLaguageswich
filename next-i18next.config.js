@@ -8,7 +8,7 @@ module.exports = {
   debug: process.env.NODE_ENV === 'development',
   i18n: {
     defaultLocale: 'es',
-    locales: ['en', 'es', 'fr', 'de'],
+    locales: ['es', 'en', 'fr', 'de'],
   },
   /** To avoid issues when deploying to some paas (vercel...) */
   localePath:
