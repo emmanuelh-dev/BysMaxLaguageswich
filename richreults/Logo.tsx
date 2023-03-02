@@ -10,7 +10,7 @@ interface Logoprops {
 
 export const Logo = ({ title, description, category, image, baseUrl }: Logoprops) => {
   const { i18n } = useTranslation();
-  const url = `http://bysmax.com/${i18n.language}/${baseUrl}`;
+  const url = `http://bysmax.com/${i18n.language}${baseUrl}`;
   return (
     <script
       type="application/ld+json"
