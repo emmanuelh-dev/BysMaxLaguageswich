@@ -12,7 +12,7 @@ type Props = {
   // Add custom props here
 };
 
-const index = (
+ const index = (
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
   const { t } = useTranslation(["contact"]);

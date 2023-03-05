@@ -227,8 +227,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
       "header",
       "footer",
       "homepage",
-      "calculators",
-      "electronic",
     ])),
   },
 });
