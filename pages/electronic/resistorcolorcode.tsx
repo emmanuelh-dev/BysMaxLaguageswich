@@ -46,6 +46,7 @@ const resistorcolorcode = () => {
       title="Ohm's Law Calculator - BysMax"
       description="Calculate voltage, current, resistance and power using Ohm's Law."
       keywords=""
+      baseUrl={"/electronic/resistorcolorcode"}
     >
       <div className=" container mx-auto m-8 p-4 rounded-md">
         <h1 className="text-5xl font-semibold mb-4">

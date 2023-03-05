@@ -67,7 +67,8 @@ const ohmlawcalculator = (
   return (
     <Layout
       title="Ohm's Law Calculator - BysMax"
-      description="Calculate voltage, current, resistance and power using Ohm's Law." keywords={""}    >
+      description="Calculate voltage, current, resistance and power using Ohm's Law." keywords={""} 
+      baseUrl={"/electronic/ohmlawcalculator"}   >
       <div className="bg-white dark:bg-black">
         <div className="container max-w-7xl m-auto p-4">
           <h1 className="text-5xl font-semibold mb-4 text-center">

@@ -113,6 +113,7 @@ const electronic = (
         title={t("electronic:title")}
         description={t("electronic:description")}
         keywords={t("electronic:keywords")}
+        baseUrl={"/electronic"}
       >
         <div className="items-center justify-between container mx-auto max-w-7xl w-full p-6">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-blue-700">

@@ -50,7 +50,7 @@ const services = (
   };
   const { t } = useTranslation(["homepage"]);
   return (
-    <Layout title={title} description={calculator} keywords="capacitor calculator">
+    <Layout title={title} description={calculator} keywords="capacitor calculator" baseUrl={"/electronic/capacitorcalculator"} >
       <Logo title={title} description={calculator} baseUrl={"/electronic/capacitorcalculator"} category={"Calculator"} image={"https://www.bysmax.com/media/capacitance.png"}/>
       <div className="bg-white dark:bg-black">
         <div className="container max-w-6xl m-auto p-4">

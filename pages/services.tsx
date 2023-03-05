@@ -127,6 +127,7 @@ const services = (
         title={t("homepage:title")}
         description={t("homepage:description")}
         keywords="Services"
+        baseUrl={"/services"}
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 gap-8 justify-around md:my-72  items-center justify-items-center ">

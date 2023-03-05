@@ -7,6 +7,8 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
+
+
 const user = {
   name: "Calculadoras",
   email: "tom@example.com",
@@ -19,7 +21,7 @@ const navigation = [
   { name: "Services", href: "/services", current: false },
   { name: "Calculators", href: "/electronic", current: false },
 
-  { name: "Reports", href: "#", current: false },
+  { name: "Maintenance", href: "/services/maintenance", current: false },
 ];
 const userNavigation = [
   { name: "All", href: "/electronic" },
@@ -31,8 +33,10 @@ function classNames(...classes: string[]) {
 }
 
 export const Header: FC = ({}) => {
-  const { t } = useTranslation("header");
-
+  const { t } = useTranslation(["header"]);
+  const title = "hola mundo"
+  console.log({ t });
+  console.log(title);
   return (
     <header>
       <div className="min-h-full">
