@@ -1,17 +1,21 @@
 {
-  "navbar": {
+  "user": {
     "name": "Calculators",
-    "calc1": "Ohm Calculator"
+    "email": "tom@example.com",
+    "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
   },
   "navigation": [
+    { "name": "About", "href": "/about", "current": false },
     { "name": "Contact", "href": "/contact", "current": false },
-    { "name": "Team", "href": "#", "current": false },
-    { "name": "Projects", "href": "#", "current": false },
-    { "name": "Calendar", "href": "#", "current": false },
-    { "name": "Reports", "href": "#", "current": false }
+    { "name": "Services", "href": "/services", "current": false },
+    { "name": "Calculators", "href": "/electronic", "current": false },
+    { "name": "Maintenance", "href": "/services/maintenance", "current": false }
   ],
   "userNavigation": [
     { "name": "All", "href": "/electronic" },
     { "name": "Settings", "href": "#" }
-  ]
+  ],
+  "calculators": {
+    "name": "Calculators"
+   }
 }

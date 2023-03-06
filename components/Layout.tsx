@@ -53,7 +53,7 @@ export const Layout: FC<LayoutProps> = ({
         <link rel="shortcut icon" href="/icon.jpg" />
       </Head>
       <div className="bg-white text-black dark:bg-black dark:text-white">
-        <div className="container mx-auto px-4mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 overflow-hidden">
           <Header />
           {children}
           <Footer />

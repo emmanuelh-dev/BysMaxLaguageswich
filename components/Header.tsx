@@ -1,42 +1,29 @@
 import { useTranslation } from "next-i18next";
 import type { FC } from "react";
-import Head from "next/head";
 import Link from "next/link";
 
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import classNames from "classnames";
 
 
-
-const user = {
-  name: "Calculadoras",
-  email: "tom@example.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-};
-const navigation = [
-  { name: "About", href: "/about", current: false },
-  { name: "Contact", href: "/contact", current: false },
-  { name: "Services", href: "/services", current: false },
-  { name: "Calculators", href: "/electronic", current: false },
-
-  { name: "Maintenance", href: "/services/maintenance", current: false },
-];
-const userNavigation = [
-  { name: "All", href: "/electronic" },
-  { name: "Settings", href: "#" },
-];
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
+function getTranslations(lang: string) {
+  switch (lang) {
+    case "fr":
+      return require("/public/locales/fr/header.json");
+    case "en":
+      return require("/public/locales/en/header.json");
+    case "de":
+      return require("/public/locales/de/header.json");
+    // Agrega más casos según los idiomas que necesites soportar
+    default:
+      return require("/public/locales/es/header.json");
+  }
 }
-
 export const Header: FC = ({}) => {
-  const { t } = useTranslation(["header"]);
-  const title = "hola mundo"
-  console.log({ t });
-  console.log(title);
+  const { t } = useTranslation(["electronic"]);
+  const header = getTranslations(t("electronic:lang"));
   return (
     <header>
       <div className="min-h-full">
@@ -54,7 +41,10 @@ export const Header: FC = ({}) => {
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
-                      {navigation.map((item) => (
+                      {header.navigation.map((item: {
+                          name: string;
+                          href: string;
+                        }) => (
                         <Link href={item.href}>
                           <span className="dark:text-white text-black hover:bg-neutral-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                             {item.name}
@@ -70,7 +60,7 @@ export const Header: FC = ({}) => {
                     <Menu as="div" className="relative ml-3">
                       <div>
                         <Menu.Button className="flex max-w-xs items-center rounded-md focus:outline-none hover:bg-neutral-600 hover:text-white  text-sm font-semibold">
-                          <span className="px-3 py-2 ">{t("navbar.name")}</span>
+                          <span className="px-3 py-2 ">{header.user.name}</span>
                         </Menu.Button>
                       </div>
                       <Transition
@@ -83,7 +73,10 @@ export const Header: FC = ({}) => {
                         leaveTo="transform opacity-0 scale-95"
                       >
                         <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                          {userNavigation.map((item) => (
+                          {header.userNavigation.map((item: {
+                          name: string;
+                          href: string;
+                        }) => (
                             <Menu.Item key={item.name}>
                               {({ active }) => (
                                 <Link href={item.href}>
@@ -118,7 +111,10 @@ export const Header: FC = ({}) => {
               </div>
               <Disclosure.Panel className="md:hidden">
                 <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-                  {navigation.map((item) => (
+                  {header.navigation.map((item: {
+                          name: string;
+                          href: string;
+                        }) => (
                     <Link href={item.href}>
                       <ul>
                         <li className="containertext-neutral-300 hover:bg-neutral-600 hover:text-white px-3 py-2 rounded-md text-xl font-medium">
@@ -132,7 +128,7 @@ export const Header: FC = ({}) => {
                   <div className="flex items-center px-2">
                     <div className="ml-3">
                       <div className="text-base font-medium leading-none text-black dark:text-white">
-                        {user.name}
+                        {header.user.name}
                       </div>
                     </div>
                     <button
@@ -144,7 +140,10 @@ export const Header: FC = ({}) => {
                     </button>
                   </div>
                   <div className="mt-3 space-y-1 px-2">
-                    {userNavigation.map((item) => (
+                    {header.userNavigation.map((item: {
+                          name: string;
+                          href: string;
+                        }) => (
                       <Disclosure.Button
                         key={item.name}
                         className="container text-left block rounded-md px-3 py-2 text-base font-medium hover:bg-neutral-600 hover:text-white"

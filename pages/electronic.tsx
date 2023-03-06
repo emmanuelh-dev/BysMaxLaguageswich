@@ -31,9 +31,8 @@ const electronic = (
 ) => {
   const { t } = useTranslation(["electronic"]);
   const calculators = getTranslations(t("electronic:lang"));
-  console.log(t("electronic:lang"));
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -133,7 +132,7 @@ const electronic = (
               }) => (
                 <div
                   key={calculator.name}
-                  className=" border-xl rounded-lg dark:bg-neutral-900 p-4 shadow-lg  transition duration-500 ease-in-out transform hover:-translate-y-4 hover:shadow-lg"
+                  className=" border-xl rounded-lg dark:bg-neutral-900 p-4 shadow-lg  transition duration-500 ease-in-out transform hover:-translate-y-4 hover:shadow-lg overflow-auto"
                 >
                   <Link href={calculator.link}>
                     <span>
@@ -149,7 +148,13 @@ const electronic = (
                       <p className="dark:text-neutral-100 text-center">
                         {calculator.description}
                       </p>
-                      <Logo title={calculator.name} description={calculator.description} baseUrl={calculator.link} category={"Calculator"} image={calculator.image}/>
+                      <Logo
+                        title={calculator.name}
+                        description={calculator.description}
+                        baseUrl={calculator.link}
+                        category={"Calculator"}
+                        image={calculator.image}
+                      />
                     </span>
                   </Link>
                 </div>
@@ -159,7 +164,7 @@ const electronic = (
         </div>
         <CalculatorsComponent />
       </Layout>
-    </div>
+    </>
   );
 };
 
