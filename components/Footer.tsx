@@ -13,13 +13,13 @@ export const Footer: FC = () => {
           <p>{t("copy")}</p>
           <div className="flex gap-4 pt-4">
             <Link href="https://www.facebook.com/bysmax/">
-              <Facebook className="dark:text-white" size={32}  aria-label={t("facebook")}/>
+              <Facebook className="dark:text-white hover:text-blue-700" size={32}  aria-label={t("facebook")}/>
             </Link>
             <Link href="https://www.instagram.com/bysmax1/">
-              <Instagram className="dark:text-white" size={32} aria-label={t("instagram")}/>
+              <Instagram className="dark:text-white hover:text-blue-700" size={32} aria-label={t("instagram")}/>
             </Link>
             <Link href="https://twitter.com/emmanuelhdev">
-              <Twitter className="dark:text-white" size={32} aria-label={t("twitter")}/>
+              <Twitter className="dark:text-white hover:text-blue-700" size={32} aria-label={t("twitter")}/>
             </Link>
           </div>
         </div>

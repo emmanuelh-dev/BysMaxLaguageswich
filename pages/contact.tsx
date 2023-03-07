@@ -30,13 +30,13 @@ type Props = {
           <form>
             <div className="mb-4">
               <label
-                className="block dark:text-gray-200 font-bold mb-2"
+                className="block dark:text-neutral-200 font-bold mb-2"
                 htmlFor="name"
               >
                 {t("contact:form.name.label")}
               </label>
               <input
-                className="appearance-none border rounded w-full py-2 px-3 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+                className="appearance-none border rounded w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
                 id="name"
                 type="text"
                 placeholder={t("contact:form.name.placeholder")}
@@ -44,13 +44,13 @@ type Props = {
             </div>
             <div className="mb-4">
               <label
-                className="block dark:text-gray-200 font-bold mb-2"
+                className="block dark:text-neutral-200 font-bold mb-2"
                 htmlFor="email"
               >
                 {t("contact:form.email.label")}
               </label>
               <input
-                className="appearance-none border rounded w-full py-2 px-3 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+                className="appearance-none border rounded w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
                 id="email"
                 type="email"
                 placeholder={t("contact:form.email.placeholder")}
@@ -58,20 +58,20 @@ type Props = {
             </div>
             <div className="mb-4">
               <label
-                className="block dark:text-gray-200 font-bold mb-2"
+                className="block dark:text-neutral-200 font-bold mb-2"
                 htmlFor="message"
               >
                 {t("contact:form.message.label")}
               </label>
               <textarea
-                className="appearance-none border rounded w-full py-2 px-3 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
+                className="appearance-none border rounded w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
                 id="message"
                 rows={5}
                 placeholder={t("contact:form.message.placeholder")}
               ></textarea>
             </div>
             <button
-              className="bg-blue-500 hovedark:r:bg-blue-200 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-blue-700 hovedark:r:bg-neutral-100 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
               disabled
             >
