@@ -36,7 +36,7 @@ type Props = {
                 {t("contact:form.name.label")}
               </label>
               <input
-                className="appearance-none border rounded w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
+                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
                 id="name"
                 type="text"
                 placeholder={t("contact:form.name.placeholder")}
@@ -50,7 +50,7 @@ type Props = {
                 {t("contact:form.email.label")}
               </label>
               <input
-                className="appearance-none border rounded w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
+                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
                 id="email"
                 type="email"
                 placeholder={t("contact:form.email.placeholder")}
@@ -64,14 +64,14 @@ type Props = {
                 {t("contact:form.message.label")}
               </label>
               <textarea
-                className="appearance-none border rounded w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
+                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
                 id="message"
                 rows={5}
                 placeholder={t("contact:form.message.placeholder")}
               ></textarea>
             </div>
             <button
-              className="bg-blue-700 hovedark:r:bg-neutral-100 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-blue-700 hovedark:r:bg-neutral-100 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline container"
               type="submit"
               disabled
             >
