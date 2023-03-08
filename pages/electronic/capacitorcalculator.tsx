@@ -54,7 +54,7 @@ const services = (
       <Logo title={title} description={calculator} baseUrl={"/electronic/capacitorcalculator"} category={"Calculator"} image={"https://www.bysmax.com/media/capacitance.png"}/>
           <h1 className="text-5xl p-4 font-extrabold text-center m-6 text-blue-700">{title}</h1>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols- lg:grid-cols-3 gap-4">
-            <div className="bg-white dark:bg-black p-4 rounded-md shadow-md">
+            <div className="p-8 rounded-md shadow-md">
               <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
                 Capacitance (Farads)
               </label>
@@ -86,7 +86,7 @@ const services = (
               />
 
               <button
-                className="w-full py-2 font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600"
+                className="w-full py-2 font-medium text-white bg-blue-700 rounded-md hover:bg-blue-600"
                 onClick={() => {
                   if (capacitance && voltage) {
                     setCharge(calculateCharge());

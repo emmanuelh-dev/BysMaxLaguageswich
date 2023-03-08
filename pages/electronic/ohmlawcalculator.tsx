@@ -70,12 +70,12 @@ const ohmlawcalculator = (
       }
       baseUrl={"/electronic/ohmlawcalculator"}
     >
-      
       <h1 className="text-6xl py-10 text-center font-extrabold text-blue-700">
         Ohm&rsquo;s Law Calculator
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
-        <div className="py-10 md:py-0">
+        <div className="rounded-md shadow-lg dark:bg-neutral-800">
+          <div className="p-8 ">
           <div className="mb-4">
             <label className="block mb-2 font-medium">Voltage (V)</label>
             <input
@@ -136,12 +136,14 @@ const ohmlawcalculator = (
           >
             Calculate
           </button>
+          </div>
         </div>
-        <div className="justify-center flex container col-span-2">
+        <div className="justify-center flex container col-span-2 ">
           <Image
             width={1280 * 0.5}
             height={720 * 0.5}
             objectFit="cover"
+            className="rounded-md shadow-lg dark:bg-neutral-800"
             src={"/media/ohmimage.png"}
             alt="Diagrama del circuito eléctrico de la ley de Ohm"
           />
