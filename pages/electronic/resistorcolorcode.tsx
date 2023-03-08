@@ -48,7 +48,6 @@ const resistorcolorcode = () => {
       keywords=""
       baseUrl={"/electronic/resistorcolorcode"}
     >
-      <div className=" container mx-auto m-8 p-4 rounded-md">
         <h1 className="text-5xl font-semibold mb-4">
           Ohm&rsquo;s Law Calculator
         </h1>
@@ -138,7 +137,6 @@ const resistorcolorcode = () => {
             </button>
           </div>
         </div>
-      </div>
     </Layout>
   );
 };

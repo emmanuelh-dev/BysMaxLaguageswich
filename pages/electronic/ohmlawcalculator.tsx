@@ -4,17 +4,14 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { Layout } from "components/Layout";
-
-import { NextPage } from "next";
-
 import classNames from "classnames";
-
-
+import Image from "next/image";
 import { useState } from "react";
-import {Logo} from "richreults/Logo";
+import { NextSeo } from "next-seo";
 type Props = {
   // Add custom props here
 };
+
 const title =
   "Capacitance Calculator - Calculate Capacitance, Voltage, and Charge";
 const calculator =
@@ -67,93 +64,100 @@ const ohmlawcalculator = (
   return (
     <Layout
       title="Ohm's Law Calculator - BysMax"
-      description="Calculate voltage, current, resistance and power using Ohm's Law." keywords={""} 
-      baseUrl={"/electronic/ohmlawcalculator"}   >
-        <div className="container max-w-7xl m-auto p-4">
-          <h1 className="text-6xl mb-4 text-center font-extrabold text-blue-700">
-            Ohm&rsquo;s Law Calculator
-          </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols- lg:grid-cols-3 gap-4">
-            <div className="">
-              <div className="mb-4">
-                <label className="block mb-2 font-medium">Voltage (V)</label>
-                <input
-                  type="number"
-                  className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
-                  value={voltage}
-                  onChange={handleVoltageChange}
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block mb-2 font-medium">Current (A)</label>
-                <input
-                  type="number"
-                  className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
-                  value={current}
-                  onChange={handleCurrentChange}
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block mb-2 font-medium ">Resistance (Ω)</label>
-                <input
-                  type="number"
-                  className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
-                  value={resistance}
-                  onChange={handleResistanceChange}
-                />
-              </div>
-              <div className="mb-4">
-                <label className="block mb-2 font-medium">Power (W)</label>
-                <input
-                  type="number"
-                  className="w-full p-2 border border-gray-400 rounded-md dark:text-black "
-                  value={power}
-                  onChange={handlePowerChange}
-                />
-              </div>
-              <button
-                className={classNames(
-                  "bg-blue-700 text-white   font-medium py-2 px-4 rounded-md container",
-                  {
-                    "opacity-50 cursor-not-allowed":
-                      !voltage && !current && !resistance && !power,
-                  }
-                )}
-                disabled={!voltage && !current && !resistance && !power}
-                onClick={() => {
-                  if (voltage && current) {
-                    setResistance(calculateResistance());
-                    setPower(calculatePower());
-                  } else if (voltage && resistance) {
-                    setCurrent(calculateCurrent());
-                    setPower(calculatePower());
-                  } else if (current && resistance) {
-                    setVoltage(calculateVoltage());
-                    setPower(calculatePower());
-                  }
-                }}
-              >
-                Calculate
-              </button>
-            </div>
-            <div className="col-span-2 grid grid-cols-2 gap-4">
-              <div className="container col-span-2">
-                <div className="mb-4">
-                  <p className="text-xl mb-2">
-                    Enter any two values (voltage, current, resistance or power)
-                    and click the &rsquo;Calculate&rsquo; button to calculate
-                    the other two values.
-                  </p>
-                  <p className="text-xl">
-                    Note: Use the correct units (volts for voltage, amps for
-                    current, ohms for resistance, and watts for power).
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div></div>
+      description="Calculate voltage, current, resistance and power using Ohm's Law."
+      keywords={
+        "Calculadora de la ley de Ohm,Ohmímetro,Ley de Ohm,Cálculo de resistencia,Cálculo de voltaje,Cálculo de corriente,Circuito eléctrico,Fórmula de Ohm,Resistividad,Conductividad eléctrica,Ley de Ohm para principiantes,Física eléctrica,Cálculo de potencia léctrica,Cálculo de carga eléctrica,"
+      }
+      baseUrl={"/electronic/ohmlawcalculator"}
+    >
+      
+      <h1 className="text-6xl py-10 text-center font-extrabold text-blue-700">
+        Ohm&rsquo;s Law Calculator
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className="py-10 md:py-0">
+          <div className="mb-4">
+            <label className="block mb-2 font-medium">Voltage (V)</label>
+            <input
+              type="number"
+              className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
+              value={voltage}
+              onChange={handleVoltageChange}
+            />
           </div>
+          <div className="mb-4">
+            <label className="block mb-2 font-medium">Current (A)</label>
+            <input
+              type="number"
+              className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
+              value={current}
+              onChange={handleCurrentChange}
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block mb-2 font-medium ">Resistance (Ω)</label>
+            <input
+              type="number"
+              className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
+              value={resistance}
+              onChange={handleResistanceChange}
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block mb-2 font-medium">Power (W)</label>
+            <input
+              type="number"
+              className="w-full p-2 border border-gray-400 rounded-md dark:text-black "
+              value={power}
+              onChange={handlePowerChange}
+            />
+          </div>
+          <button
+            className={classNames(
+              "bg-blue-700 text-white font-medium py-2 px-4 rounded-md container",
+              {
+                "opacity-50 cursor-not-allowed":
+                  !voltage && !current && !resistance && !power,
+              }
+            )}
+            disabled={!voltage && !current && !resistance && !power}
+            onClick={() => {
+              if (voltage && current) {
+                setResistance(calculateResistance());
+                setPower(calculatePower());
+              } else if (voltage && resistance) {
+                setCurrent(calculateCurrent());
+                setPower(calculatePower());
+              } else if (current && resistance) {
+                setVoltage(calculateVoltage());
+                setPower(calculatePower());
+              }
+            }}
+          >
+            Calculate
+          </button>
+        </div>
+        <div className="justify-center flex container col-span-2">
+          <Image
+            width={1280 * 0.5}
+            height={720 * 0.5}
+            objectFit="cover"
+            src={"/media/ohmimage.png"}
+            alt="Diagrama del circuito eléctrico de la ley de Ohm"
+          />
+        </div>
+      </div>
+      <div className="container col-span-2 py-4">
+        <div className="mb-4">
+          <p className="text-xl mb-2">
+            Enter any two values <span className="font-bold">(voltage, current, resistance or power)</span> and
+            click the <span className="font-bold">&rsquo;Calculate&rsquo;</span> button to calculate the other two
+            values.
+          </p>
+          <p className="text-xl">
+            <span className="font-bold">Note:</span> Use the correct units (volts for voltage, amps for current,
+            ohms for resistance, and watts for power).
+          </p>
           <p className="text-xl mb-2">
             Ohm&rsquo;s Law states that the current through a conductor between
             two points is directly proportional to the voltage across the two
@@ -164,9 +168,8 @@ const ohmlawcalculator = (
             current, and R is resistance.
           </p>
         </div>
-
+      </div>
     </Layout>
-
   );
 };
 
@@ -177,6 +180,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
     ...(await serverSideTranslations(locale ?? "es", [
       "header",
       "footer",
+      "ohmslaw",
     ])),
   },
 });
