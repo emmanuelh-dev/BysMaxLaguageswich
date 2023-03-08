@@ -13,7 +13,9 @@
   ],
   "userNavigation": [
     { "name": "All", "href": "/electronic" },
-    { "name": "Settings", "href": "#" }
+    { "name": "Calculadora de Ley de Ohm", "href": "/electronic/ohmlawcalculator" },
+    { "name": "Capacitance Calculator", "href": "/electronic/capacitorcalculator" },
+    { "name": "Configure a transformator in proteus", "href": "electronic/transformadorproteus" }
   ],
   "calculators": {
     "name": "Calculators"
