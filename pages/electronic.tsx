@@ -122,7 +122,7 @@ const electronic = (
         </div>
 
         <div className="flex items-center justify-between container mx-auto max-w-7xl w-full p-6">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
             {calculators.map(
               (calculator: {
                 name: string;

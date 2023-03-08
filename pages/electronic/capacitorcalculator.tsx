@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Layout } from "components/Layout";
 import { useState } from "react";
 import {Logo} from "richreults/Logo";
+
 type Props = {
   // Add custom props here
 };
@@ -104,6 +105,7 @@ const services = (
               <div className="container col-span-2">
                 <p className=" text-lg pt-4">{calculator}</p>
                 <p className=" text-lg pt-4">{calcuator2}</p>
+                <p>Para calcular la capacitancia de un circuito eléctrico, se puede usar la siguiente fórmula: C = q / v12, donde C es la capacitancia en faradios (F), q es la carga en coulombs © y v es el voltaje en voltios (V). Si se conoce la frecuencia y la inductancia del circuito, se puede usar otra fórmula: C = 1/2πfL3, donde f es la frecuencia en hertz (Hz) y L es la inductancia en henrios (H). Para medir la capacitancia de un condensador, se puede usar un multímetro que tenga esa función4.</p>
               </div>
             </div>
           </div>
