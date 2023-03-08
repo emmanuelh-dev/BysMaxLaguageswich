@@ -20,7 +20,21 @@ const nextConfig = {
   },
   images: {
     domains: ["images.pexels.com"],
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/servicios',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/contacto',
+        destination: '/contact',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

@@ -4,7 +4,9 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { Layout } from "components/Layout";
-import Image from "next/image";
+import Gridimgleft from "components/Gridimgleft";
+import Gridimgright from "components/Gridimgright";
+
 type Props = {
   // Add custom props here
 };
@@ -128,92 +130,11 @@ const index = (
         keywords="homepage"
         baseUrl={""}
       >
-        <h1 className="text-blue-700 font-extrabold text-6xl py-6">{t("homepage:title")}</h1>
-        <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 gap-8 justify-around md:my-72  items-center justify-items-center ">
-          <div className="flex justify-center items-center justify-items-center">
-            <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
-              <Image
-                width={400}
-                height={600}
-                className="object-cover rounded-xl"
-                src="/media/material.jpg"
-                alt="Instalaciones de redes"
-              />
-            </div>
-          </div>
-          <div className="flex justify-center items-center justify-items-center">
-            <div className="max-w-sm flex flex-col ">
-              <h2 className="text-2xl text-blue-600 py-4 font-bold ">
-                {t("homepage:components")}
-              </h2>
-              <p className="text-lg dark:text-white text-black">
-                {t("homepage:componentsDescription")}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className=" md:grid md:grid-cols-2 gap-8 justify-around md:my-72 md:py-6 items-center justify-items-center">
-          <div className="max-w-sm flex flex-col ">
-            <h2 className="text-2xl text-blue-600 py-4 font-bold ">
-              {t("homepage:office")}
-            </h2>
-            <p className="text-lg dark:text-white text-black">
-              {t("homepage:officeDescription")}
-            </p>
-          </div>
-
-          <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
-            <Image
-              width={400}
-              height={600}
-              className="object-cover rounded-xl"
-              src="/media/mantenimiento.png"
-              alt="Instalaciones de redes"
-            />
-          </div>
-        </div>
-        <div className="max-sm:flex max-sm:flex-col-reverse md:grid md:grid-cols-2 gap-8 justify-around md:my-72  items-center justify-items-center ">
-          <div className="flex justify-center items-center justify-items-center">
-            <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
-              <Image
-                width={400}
-                height={600}
-                className="object-cover rounded-xl"
-                src="/media/redes.png"
-                alt="Instalaciones de redes"
-              />
-            </div>
-          </div>
-          <div className="flex justify-center items-center justify-items-center">
-            <div className="max-w-sm flex flex-col ">
-              <h2 className="text-2xl text-blue-600 py-4 font-bold ">
-                {t("homepage:redes")}
-              </h2>
-              <p className="text-lg dark:text-white text-black">
-                {t("homepage:redesDescription")}
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="md:grid md:grid-cols-2 gap-8 justify-around md:my-72 md:py-6 items-center justify-items-center">
-          <div className="max-w-sm flex flex-col ">
-            <h2 className="text-2xl text-blue-600 py-4 font-bold ">
-              {t("homepage:others")}
-            </h2>
-            <p className="text-lg dark:text-white text-black">
-              {t("homepage:othersDescription")}
-            </p>
-          </div>
-          <div className="h-64 relative hover:scale-105 max-w-sm mx-auto md:ml-4 max-sm:pt-5">
-            <Image
-              width={400}
-              height={600}
-              className="object-cover rounded-xl"
-              src="/media/pc.png"
-              alt="Instalaciones de redes"
-            />
-          </div>
-        </div>
+        <h1 className="text-blue-700 font-extrabold text-5xl pt-6">{t("homepage:title")}</h1>
+        <Gridimgleft title={t("homepage:components")} description={t("homepage:componentsDescription")} link="/services" image="/media/material.jpg"/>
+        <Gridimgright title={t("homepage:office")} description={t("homepage:officeDescription")} link="/services" image="/media/mantenimiento.png"/>
+        <Gridimgleft title={t("homepage:redes")} description={t("homepage:redesDescription")} link="/services" image="/media/redes.png"/>
+        <Gridimgright title={t("homepage:others")} description={t("homepage:othersDescription")} link="/services" image="/media/pc.png"/>
       </Layout>
     </>
   );

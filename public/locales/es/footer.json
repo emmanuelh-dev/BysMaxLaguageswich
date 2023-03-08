@@ -2,5 +2,10 @@
   "description": "Este es un componente que no es de página y requiere su propio espacio de nombres",
   "helpLocize": "Al usar <1>locize</1>, apoyas directamente el futuro de <3>i18next</3>",
   "prueba":"Esta es una prueba",
-  "copy":"© 2023 BysMax. Todos los derechos reservados."
+  "copy":"© 2023 BysMax. Todos los derechos reservados.",
+  "facebook": "Link to Facebook",
+  "instagram": "Link to Facebook",
+  "twitter": "Link to Facebook"
+
+
 }

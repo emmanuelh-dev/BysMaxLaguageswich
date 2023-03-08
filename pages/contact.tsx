@@ -17,9 +17,8 @@ type Props = {
 ) => {
   const { t } = useTranslation(["contact"]);
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white ">
       <Layout title={t("contact:title")} description={t("contact:description")} keywords="Contact" baseUrl={"/contact"}>
-        <div className="container mx-auto max-w-2xl p-6">
+        <div className="container mx-auto max-w-2xl">
           <h1 className="text-center text-5xl md:text-6xl font-extrabold pt-6 md:pb-6 text-blue-700">
             {t("contact:h1")}
           </h1>
@@ -36,7 +35,7 @@ type Props = {
                 {t("contact:form.name.label")}
               </label>
               <input
-                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
+                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-neutral-600 dark:bg-neutral-900"
                 id="name"
                 type="text"
                 placeholder={t("contact:form.name.placeholder")}
@@ -50,7 +49,7 @@ type Props = {
                 {t("contact:form.email.label")}
               </label>
               <input
-                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
+                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-neutral-600 dark:bg-neutral-900"
                 id="email"
                 type="email"
                 placeholder={t("contact:form.email.placeholder")}
@@ -64,7 +63,7 @@ type Props = {
                 {t("contact:form.message.label")}
               </label>
               <textarea
-                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-blue-700 dark:bg-neutral-900"
+                className="appearance-none border rounded-md w-full py-2 px-3 dark:text-neutral-200 leading-tight focus:outline-none focus:shadow-outline dark:border-neutral-600 dark:bg-neutral-900"
                 id="message"
                 rows={5}
                 placeholder={t("contact:form.message.placeholder")}
@@ -90,7 +89,6 @@ type Props = {
           </div>
         </div>
       </Layout>
-    </div>
   );
 };
 

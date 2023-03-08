@@ -69,9 +69,8 @@ const ohmlawcalculator = (
       title="Ohm's Law Calculator - BysMax"
       description="Calculate voltage, current, resistance and power using Ohm's Law." keywords={""} 
       baseUrl={"/electronic/ohmlawcalculator"}   >
-      <div className="bg-white dark:bg-black">
         <div className="container max-w-7xl m-auto p-4">
-          <h1 className="text-5xl font-semibold mb-4 text-center">
+          <h1 className="text-6xl mb-4 text-center font-extrabold text-blue-700">
             Ohm&rsquo;s Law Calculator
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols- lg:grid-cols-3 gap-4">
@@ -80,7 +79,7 @@ const ohmlawcalculator = (
                 <label className="block mb-2 font-medium">Voltage (V)</label>
                 <input
                   type="number"
-                  className="w-full p-2 border border-gray-400 rounded-md"
+                  className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
                   value={voltage}
                   onChange={handleVoltageChange}
                 />
@@ -89,16 +88,16 @@ const ohmlawcalculator = (
                 <label className="block mb-2 font-medium">Current (A)</label>
                 <input
                   type="number"
-                  className="w-full p-2 border border-gray-400 rounded-md"
+                  className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
                   value={current}
                   onChange={handleCurrentChange}
                 />
               </div>
               <div className="mb-4">
-                <label className="block mb-2 font-medium">Resistance (Ω)</label>
+                <label className="block mb-2 font-medium ">Resistance (Ω)</label>
                 <input
                   type="number"
-                  className="w-full p-2 border border-gray-400 rounded-md"
+                  className="w-full p-2 border border-gray-400 rounded-md dark:text-black"
                   value={resistance}
                   onChange={handleResistanceChange}
                 />
@@ -107,14 +106,14 @@ const ohmlawcalculator = (
                 <label className="block mb-2 font-medium">Power (W)</label>
                 <input
                   type="number"
-                  className="w-full p-2 border border-gray-400 rounded-md"
+                  className="w-full p-2 border border-gray-400 rounded-md dark:text-black "
                   value={power}
                   onChange={handlePowerChange}
                 />
               </div>
               <button
                 className={classNames(
-                  "bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md",
+                  "bg-blue-700 text-white   font-medium py-2 px-4 rounded-md container",
                   {
                     "opacity-50 cursor-not-allowed":
                       !voltage && !current && !resistance && !power,
@@ -165,7 +164,7 @@ const ohmlawcalculator = (
             current, and R is resistance.
           </p>
         </div>
-      </div>
+
     </Layout>
 
   );
