@@ -130,7 +130,7 @@ const index = (
         keywords="homepage"
         baseUrl={""}
       >
-        <h1 className="text-blue-700 font-extrabold text-5xl pt-6">{t("homepage:title")}</h1>
+        <h1 className="text-blue-700 font-extrabold text-5xl pt-10">{t("homepage:title")}</h1>
         <Gridimgleft title={t("homepage:components")} description={t("homepage:componentsDescription")} link="/services" image="/media/material.jpg"/>
         <Gridimgright title={t("homepage:office")} description={t("homepage:officeDescription")} link="/services" image="/media/mantenimiento.png"/>
         <Gridimgleft title={t("homepage:redes")} description={t("homepage:redesDescription")} link="/services" image="/media/redes.png"/>

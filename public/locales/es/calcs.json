@@ -36,9 +36,9 @@
     "image": "/media/capacitance.png"
   },
   {
-    "name": "Calculadora de Capacitores",
-    "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
-    "link": "/electronic/capacitorcalculator",
+    "name": "¿Cómo configurar un transformador en proteus?",
+    "description": "Calcula Calcula la impedancia del primario y el secundario segun la salida que requieras",
+    "link": "/electronic/transformadorenproteus",
     "image": "/media/capacitance.png"
   }
 ]

@@ -131,6 +131,34 @@ const about = (
         keywords={"about"}
         baseUrl={"/about"}
       >
+        <h1 className="text-center text-6xl font-extrabold text-blue-700 py-10">
+          Lo que hacemos y por que lo hacemos.
+        </h1>
+        <p className="text-xl py-4">
+          En BysMax, nuestra pasión es trabajar "del pueblo para
+          el pueblo". Como ingenieros, hemos creado herramientas, calculadoras,
+          documentación y otros recursos para ayudarte en tu proceso de
+          formación de manera gratuita. Además, ofrecemos servicios enfocados en
+          empresas, como mantenimiento de alta calidad, instalaciones con
+          materiales de última generación y estar siempre a la vanguardia de las
+          nuevas tecnologías para brindar lo mejor.
+        </p>
+        <h2 className="text-2xl py-3 font-bold">Nuestra misión</h2>
+        <p className="text-xl py-3 ">
+          Nuestra misión es proporcionar soluciones innovadoras y accesibles
+          para ayudar a las personas a alcanzar sus objetivos y mejorar su
+          calidad de vida. Creemos que todos merecen tener acceso a herramientas
+          y servicios de alta calidad, independientemente de su nivel de
+          ingresos.
+        </p>
+        <h2 className="text-2xl py-3 font-bold">Nuestra visión</h2>
+        <p className="text-xl py-3 ">
+          Nuestra visión es convertirnos en líderes en la industria, ofreciendo
+          soluciones tecnológicas de vanguardia para satisfacer las necesidades
+          de nuestros clientes y la comunidad en general. Nos esforzamos por
+          mantener una cultura de trabajo colaborativo, creatividad y excelencia
+          en todo lo que hacemos.
+        </p>
         <Gridimgleft
           title={t("homepage:components")}
           description={t("homepage:componentsDescription")}
