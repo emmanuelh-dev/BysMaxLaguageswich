@@ -24,7 +24,8 @@ function getTranslations(lang: string) {
 export const Header: FC = ({}) => {
   // const { t } = useTranslation(["electronic"]);
   const { i18n } = useTranslation();
-  const header = getTranslations("en");
+  const lang = i18n.language
+  const header = getTranslations(lang);
   return (
     <header>
       <div className="min-h-full">
