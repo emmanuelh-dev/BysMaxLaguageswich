@@ -3,9 +3,7 @@ import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { CalculatorsComponent } from "components/CalculatorsComponent";
 import { Layout } from "components/Layout";
-import Image from "next/image";
 import Gridimgright from "components/Gridimgright";
 import Gridimgleft from "components/Gridimgleft";
 type Props = {
@@ -135,8 +133,8 @@ const about = (
           Lo que hacemos y por que lo hacemos.
         </h1>
         <p className="text-xl py-4">
-          En BysMax, nuestra pasión es trabajar "del pueblo para
-          el pueblo". Como ingenieros, hemos creado herramientas, calculadoras,
+          En BysMax, nuestra pasión es trabajar <span className="font-bold">"del pueblo para
+          el pueblo"</span>. Como ingenieros, hemos creado herramientas, calculadoras,
           documentación y otros recursos para ayudarte en tu proceso de
           formación de manera gratuita. Además, ofrecemos servicios enfocados en
           empresas, como mantenimiento de alta calidad, instalaciones con
