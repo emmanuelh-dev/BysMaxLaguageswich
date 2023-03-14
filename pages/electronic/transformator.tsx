@@ -3,7 +3,6 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Layout } from "components/Layout";
 import { useState } from "react";
-import { reducirVoltage, elevarVoltage, copyToClipboard } from "./helpers";
 import { Copy } from "react-feather";
 import { Logo } from "richreults/Logo";
 import Image from "next/image";
@@ -24,7 +23,18 @@ const electronic = (
   const handleChangeIn = (e: React.ChangeEvent<HTMLInputElement>) => {
     setVoltageIn(Number(e.target.value));
   };
-
+  function copyToClipboard(text:any) {
+    const textToCopy = text.toString();
+    navigator.clipboard.writeText(textToCopy);
+  }
+  function reducirVoltage(voltageIn:number, voltageOut:number){
+    let lp = Math.pow((voltageIn / voltageOut),2);
+    return lp;
+  }
+  function elevarVoltage(voltageIn:number, voltageOut:number){
+    let lp = Math.pow((voltageOut / voltageIn),2);
+    return lp;
+  }
   return (
     <>
       <script
@@ -140,7 +150,7 @@ const electronic = (
                     size={24}
                     aria-label={t("twitter")}
                   />
-                </button>
+                </button> 
               </h3>
               <h3>
                 <span className="font-bold">
