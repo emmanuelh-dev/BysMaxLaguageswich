@@ -7,13 +7,7 @@ const { esmExternals = false, tsconfigPath } = loadCustomBuildParams();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.node = {
-        fs: "empty",
-      };
-    }
-  },
+
   experimental: {
     esmExternals, // https://nextjs.org/blog/next-11-1#es-modules-support
     appDir: true,
