@@ -13,7 +13,7 @@ type Props = {
 const electronic = (
   _props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
-  const { t } = useTranslation(["electronic"]);
+  const { t } = useTranslation(["transformator"]);
   const [voltageIn, setVoltageIn] = useState(0);
   const [voltageOut, setVoltageOut] = useState(0);
 
@@ -23,16 +23,16 @@ const electronic = (
   const handleChangeIn = (e: React.ChangeEvent<HTMLInputElement>) => {
     setVoltageIn(Number(e.target.value));
   };
-  function copyToClipboard(text:any) {
+  function copyToClipboard(text: any) {
     const textToCopy = text.toString();
     navigator.clipboard.writeText(textToCopy);
   }
-  function reducirVoltage(voltageIn:number, voltageOut:number){
-    let lp = Math.pow((voltageIn / voltageOut),2);
+  function reducirVoltage(voltageIn: number, voltageOut: number) {
+    let lp = Math.pow(voltageIn / voltageOut, 2);
     return lp;
   }
-  function elevarVoltage(voltageIn:number, voltageOut:number){
-    let lp = Math.pow((voltageOut / voltageIn),2);
+  function elevarVoltage(voltageIn: number, voltageOut: number) {
+    let lp = Math.pow(voltageOut / voltageIn, 2);
     return lp;
   }
   return (
@@ -85,19 +85,17 @@ const electronic = (
         image={""}
       />
       <Layout
-        title={t("electronic:title")}
-        description={t("electronic:description")}
-        keywords={t("electronic:keywords")}
-        baseUrl={"/electronic"}
+        title={t("title")}
+        description={t("description")}
+        keywords={t("keywords")}
+        baseUrl={"/transformator"}
       >
         <div className="container mx-auto md:max-w-xl">
           <h1 className="text-center font-bold text-blue-600 text-5xl py-10 leading-normal	">
-            ¿Cómo configurar un transformador en Proteus?
+            {t("title")}
           </h1>
-        </div>
-        <div className="container mx-auto md:max-w-xl">
           <div className="mb-3">
-            <label htmlFor="voltageout">Voltaje de Salida</label>
+            <label htmlFor="voltageout">{t("voltageout")}</label>
 
             <input
               id="voltageout"
@@ -109,7 +107,7 @@ const electronic = (
           </div>
           <div>
             {" "}
-            <label htmlFor="voltagein">Voltaje de Entrada</label>
+            <label htmlFor="voltagein">{t("voltagein")}</label>
             <input
               id="voltagein"
               type={"number"}
@@ -127,13 +125,7 @@ const electronic = (
           <div className="container mx-auto md:max-w-xl py-10">
             <div>
               {" "}
-              <p className="py-3 font-bold text-3xl">
-                La calculadora te devolverá los siguientes resultados:
-                <br />
-                <span className="font-normal text-lg">
-                  Solo tienes que copiarlo
-                </span>
-              </p>
+              <p className="py-3 font-bold text-3xl">{t("subtitle")}</p>
               <h3>
                 <span className="font-bold">
                   Impedancia del bobinado primario: <br />
@@ -148,9 +140,9 @@ const electronic = (
                   <Copy
                     className="dark:text-white hover:text-blue-700"
                     size={24}
-                    aria-label={t("twitter")}
+                    aria-label={"copy text"}
                   />
-                </button> 
+                </button>
               </h3>
               <h3>
                 <span className="font-bold">
@@ -166,26 +158,17 @@ const electronic = (
                   <Copy
                     className="dark:text-white hover:text-blue-700"
                     size={24}
-                    aria-label={t("twitter")}
+                    aria-label={"copy text"}
                   />
                 </button>
               </h3>
             </div>
-            <h2 className="text-3xl font-bold mb-5">
-              Cómo utilizar la calculadora en Proteus
-            </h2>
+            <h2 className="text-3xl font-bold mb-5">{t("how")}</h2>
             <ul className="list-decimal list-inside">
+              <li className="pb-2">{t("1")}</li>
+              <li className="pb-2">{t("2")}</li>
               <li className="pb-2">
-                Abre Proteus y crea un nuevo esquemático.
-              </li>
-              <li className="pb-2">
-                Selecciona el componente "transformador" de la biblioteca de
-                Proteus y agrégalo al esquemático.
-              </li>
-              <li className="pb-2">
-                Configura el voltaje de entrada y salida en la calculadora y
-                copia los valores de impedancia del bobinado primario y
-                secundario que te devuelve la calculadora.
+                {t("3")}
                 <Image
                   width={600}
                   height={600}
@@ -196,10 +179,7 @@ const electronic = (
               </li>
 
               <li className="pb-2">
-                En el esquemático de Proteus, haz doble clic en el transformador
-                y en la ventana de propiedades, pega los valores de impedancia
-                del bobinado primario y secundario en los campos
-                correspondientes.
+                {t("4")}
                 <Image
                   width={600}
                   height={600}
@@ -207,7 +187,7 @@ const electronic = (
                   src={"/media/transformer/confprimary.png"}
                   alt="Transformador proteus"
                 />
-                                <Image
+                <Image
                   width={600}
                   height={600}
                   objectFit="cover"
@@ -216,8 +196,7 @@ const electronic = (
                 />
               </li>
               <li className="pb-2">
-                Haz clic en "Aceptar" para cerrar la ventana de propiedades y
-                conectar los terminales del transformador a tu circuito.
+                {t("5")}
                 <Image
                   width={600}
                   height={600}
@@ -227,16 +206,9 @@ const electronic = (
                 />
               </li>
             </ul>
-            <p className="text-xl">
-              Ahora, el transformador está configurado correctamente en tu
-              circuito de Proteus y listo para funcionar.
-            </p>
+            <p className="text-xl">{t("6")}</p>
           </div>
-          <h2>
-            Esta calculadora te permite obtener los valores necesarios para
-            configurar el bobinado primario y secundario de un transformador en
-            base al voltaje de entrada y salida que deseas obtener.
-          </h2>
+          <h2>{t("about")}</h2>
         </div>
       </Layout>
     </>
@@ -250,7 +222,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
     ...(await serverSideTranslations(locale ?? "es", [
       "header",
       "footer",
-      "electronic",
+      "transformator",
     ])),
   },
 });

@@ -1,0 +1,18 @@
+{
+  "title": "Comment configurer un transformateur dans Proteus?",
+  "description": "Guide pour configurer un transformateur dans Proteus",
+  "keywords": "proteus, transformateur, guide étape par étape",
+  "voltageout": "Tension de sortie",
+  "voltagein": "Tension d'entrée",
+  "subtitle": "La calculatrice vous donnera les résultats suivants: ",
+  "primary": "Impédance de l'enroulement primaire:",
+  "secundary": "Impédance de l'enroulement secondaire:",
+  "how": "Comment utiliser la calculatrice dans Proteus",
+  "1": "Ouvrez Proteus et créez un nouveau schéma.",
+  "2": "Sélectionnez le composant 'transformateur' de la bibliothèque de Proteus et ajoutez-le au schéma.",
+  "3": "Configurez la tension d'entrée et de sortie dans la calculatrice et copiez les valeurs d'impédance de l'enroulement primaire et secondaire que la calculatrice vous renvoie.Transformateur proteus",
+  "4": "Dans le schéma Proteus, double-cliquez sur le transformateur et dans la fenêtre des propriétés, collez les valeurs d'impédance de l'enroulement primaire et secondaire dans les champs correspondants.Transformateur proteusTransformateur proteus",
+  "5": "Cliquez sur 'OK' pour fermer la fenêtre des propriétés et connecter les terminaux du transformateur à votre circuit.",
+  "6": "Maintenant, le transformateur est correctement configuré dans votre circuit Proteus et prêt à fonctionner.",
+  "about": "Cette calculatrice vous permet d'obtenir les valeurs nécessaires pour configurer l'enroulement primaire et secondaire d'un transformateur en fonction de la tension d'entrée et de sortie que vous souhaitez obtenir."
+  }

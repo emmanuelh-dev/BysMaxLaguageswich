@@ -5,7 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { Layout } from "components/Layout";
 import { useState } from "react";
-import {Logo} from "richreults/Logo";
+import { Logo } from "richreults/Logo";
 
 type Props = {
   // Add custom props here
@@ -51,64 +51,88 @@ const services = (
   };
   const { t } = useTranslation(["homepage"]);
   return (
-    <Layout title={title} description={calculator} keywords="capacitor calculator" baseUrl={"/electronic/capacitorcalculator"} >
-      <Logo title={title} description={calculator} baseUrl={"/electronic/capacitorcalculator"} category={"Calculator"} image={"https://www.bysmax.com/media/capacitance.png"}/>
-          <h1 className="text-5xl p-4 font-extrabold text-center m-6 text-blue-700">{title}</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols- lg:grid-cols-3 gap-4">
-            <div className="p-8 rounded-md shadow-md">
-              <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
-                Capacitance (Farads)
-              </label>
-              <input
-                className="w-full px-4 py-2 mb-4 leading-tight text-gray-700 bg-gray-100 border border-gray-200 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300 dark:focus:border-blue-400 focus:outline-none focus:bg-white focus:border-blue-400"
-                type="number"
-                value={capacitance}
-                onChange={handleCapacitanceChange}
-              />
+    <Layout
+      title={title}
+      description={calculator}
+      keywords="capacitor calculator"
+      baseUrl={"/electronic/capacitorcalculator"}
+    >
+      <Logo
+        title={title}
+        description={calculator}
+        baseUrl={"/electronic/capacitorcalculator"}
+        category={"Calculator"}
+        image={"https://www.bysmax.com/media/capacitance.png"}
+      />
+      <div className="container mx-auto md:max-w-xl">
+        <h1 className="text-5xl p-4 font-extrabold text-center m-6 text-blue-700">
+          {title}
+        </h1>
+        <div >
 
-              <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
-                Voltage (Volts)
-              </label>
-              <input
-                className="w-full px-4 py-2 mb-4 leading-tight text-gray-700 bg-gray-100 border border-gray-200 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300 dark:focus:border-blue-400 focus:outline-none focus:bg-white focus:border-blue-400"
-                type="number"
-                value={voltage}
-                onChange={handleVoltageChange}
-              />
+            <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
+              Capacitance (Farads)
+            </label>
+            <input
+              className="w-full px-4 py-2 mb-4 leading-tight text-gray-700 bg-gray-100 border border-gray-200 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300 dark:focus:border-blue-400 focus:outline-none focus:bg-white focus:border-blue-400"
+              type="number"
+              value={capacitance}
+              onChange={handleCapacitanceChange}
+            />
 
-              <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
-                Charge (Coulombs)
-              </label>
-              <input
-                className="w-full px-4 py-2 mb-4 leading-tight text-gray-700 bg-gray-100 border border-gray-200 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300 dark:focus:border-blue-400 focus:outline-none focus:bg-white focus:border-blue-400"
-                type="number"
-                value={charge}
-                onChange={handleChargeChange}
-              />
+            <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
+              Voltage (Volts)
+            </label>
+            <input
+              className="w-full px-4 py-2 mb-4 leading-tight text-gray-700 bg-gray-100 border border-gray-200 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300 dark:focus:border-blue-400 focus:outline-none focus:bg-white focus:border-blue-400"
+              type="number"
+              value={voltage}
+              onChange={handleVoltageChange}
+            />
 
-              <button
-                className="w-full py-2 font-medium text-white bg-blue-700 rounded-md hover:bg-blue-600"
-                onClick={() => {
-                  if (capacitance && voltage) {
-                    setCharge(calculateCharge());
-                  } else if (capacitance && charge) {
-                    setVoltage(calculateVoltage());
-                  } else if (voltage && charge) {
-                    setCapacitance(calculateCapacitance());
-                  }
-                }}
-              >
-                Calculate
-              </button>
-            </div>
-            <div className="col-span-2 grid grid-cols-2 gap-4">
-              <div className="container col-span-2">
-                <p className=" text-lg pt-4">{calculator}</p>
-                <p className=" text-lg pt-4">{calcuator2}</p>
-                <p>Para calcular la capacitancia de un circuito eléctrico, se puede usar la siguiente fórmula: C = q / v12, donde C es la capacitancia en faradios (F), q es la carga en coulombs © y v es el voltaje en voltios (V). Si se conoce la frecuencia y la inductancia del circuito, se puede usar otra fórmula: C = 1/2πfL3, donde f es la frecuencia en hertz (Hz) y L es la inductancia en henrios (H). Para medir la capacitancia de un condensador, se puede usar un multímetro que tenga esa función4.</p>
-              </div>
+            <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
+              Charge (Coulombs)
+            </label>
+            <input
+              className="w-full px-4 py-2 mb-4 leading-tight text-gray-700 bg-gray-100 border border-gray-200 rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300 dark:focus:border-blue-400 focus:outline-none focus:bg-white focus:border-blue-400"
+              type="number"
+              value={charge}
+              onChange={handleChargeChange}
+            />
+
+            <button
+              className="w-full py-2 font-medium text-white bg-blue-700 rounded-md hover:bg-blue-600"
+              onClick={() => {
+                if (capacitance && voltage) {
+                  setCharge(calculateCharge());
+                } else if (capacitance && charge) {
+                  setVoltage(calculateVoltage());
+                } else if (voltage && charge) {
+                  setCapacitance(calculateCapacitance());
+                }
+              }}
+            >
+              Calculate
+            </button>
+
+          <div className="col-span-2 grid grid-cols-2 gap-4">
+            <div className="container col-span-2">
+              <p className=" text-lg pt-4">{calculator}</p>
+              <p className=" text-lg pt-4">{calcuator2}</p>
+              <p>
+                Para calcular la capacitancia de un circuito eléctrico, se puede
+                usar la siguiente fórmula: C = q / v12, donde C es la
+                capacitancia en faradios (F), q es la carga en coulombs © y v es
+                el voltaje en voltios (V). Si se conoce la frecuencia y la
+                inductancia del circuito, se puede usar otra fórmula: C =
+                1/2πfL3, donde f es la frecuencia en hertz (Hz) y L es la
+                inductancia en henrios (H). Para medir la capacitancia de un
+                condensador, se puede usar un multímetro que tenga esa función4.
+              </p>
             </div>
           </div>
+        </div>
+      </div>
     </Layout>
   );
 };
@@ -117,10 +141,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({
   locale,
 }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? "es", [
-      "header",
-      "footer",
-    ])),
+    ...(await serverSideTranslations(locale ?? "es", ["header", "footer"])),
   },
 });
 

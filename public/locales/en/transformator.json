@@ -1,0 +1,18 @@
+{
+  "title": "How to configure a transformer in Proteus?",
+  "description": "Guide to configure a transformer in Proteus",
+  "keywords": "proteus, transformer, step-by-step guide",
+  "voltageout": "Output Voltage",
+  "voltagein": "Input Voltage",
+  "subtitle": "The calculator will return the following results:",
+  "primary": "Primary winding impedance:",
+  "secundary": "Secondary winding impedance:",
+  "how": "How to use the calculator in Proteus",
+  "1": "Open Proteus and create a new schematic.",
+  "2": "Select the 'transformer' component from the Proteus library and add it to the schematic.",
+  "3": "Configure the input and output voltages in the calculator and copy the values of the primary and secondary winding impedances returned by the calculator.",
+  "4": "In the Proteus schematic, double-click on the transformer and in the properties window, paste the values of the primary and secondary winding impedances in the corresponding fields.",
+  "5": "Click 'OK' to close the properties window and connect the transformer terminals to your circuit.",
+  "6": "Now, the transformer is correctly configured in your Proteus circuit and ready to work.",
+  "about": "This calculator allows you to obtain the values necessary to configure the primary and secondary windings of a transformer based on the input and output voltage you want to obtain."
+  }

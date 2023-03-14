@@ -1,45 +1,26 @@
 [
   {
-    "name": "Ohm's Law Calculator",
-    "description": "Berechnen Sie Spannung, Strom, Widerstand und Leistung mit dem Ohmschen Gesetz.",
-    "link": "/electronic/ohmlawcalculator",
-    "image": "/media/ohm.png"
-    
+  "name": "Ohm'sches Gesetz Rechner",
+  "description": "Berechnet Spannung, Stromstärke, Widerstand und Leistung mit dem Ohm'schen Gesetz.",
+  "link": "/electronic/ohmlawcalculator",
+  "image": "/media/ohm.png"
   },
   {
-    "name": "Kondensatorrechner",
-    "description": "Berechnen Sie die Kapazität, Spannung oder Ladung auf einem Kondensator.",
-    "link": "/electronic/capacitorcalculator",
-    "image": "/media/capacitance.png"
+  "name": "Kondensator Rechner",
+  "description": "Berechnet die Kapazität, Spannung oder Ladung eines Kondensators.",
+  "link": "/electronic/capacitorcalculator",
+  "image": "/media/capacitance.png"
   },
   {
-    "name": "Widerstand Farbcode",
-    "description": "Finden Sie den Widerstandswert eines Widerstands aus seinem Farbcode.",
-    "link": "/electronic/resistorcolorcode",
-    "image": "/media/resistor.png"
+  "name": "Farbcodierung von Widerständen",
+  "description": "Findet den Wert des Widerstands anhand seiner Farbcodierung.",
+  "link": "/electronic/resistorcolorcode",
+  "image": "/media/resistor.png"
   },
   {
-    "name": "Widerstand in Parallel",
-    "description": "Finden Sie den Widerstand.",
-    "link": "/electronic/resistorcolorcode",
-    "image": "/media/capacitance.png"
-  },
-  {
-    "name": "Widerstand in Serie",
-    "description": "Finden Sie den Widerstand.",
-    "link": "/electronic/resistorcolorcode",
-    "image": "/media/capacitance.png"
-  },
-  {
-    "name": "Kondensatorrechner",
-    "description": "Berechnen Sie die Kapazität, Spannung oder Ladung auf einem Kondensator.",
-    "link": "/electronic/capacitorcalculator",
-    "image": "/media/capacitance.png"
-  },
-  {
-    "name": "Kondensatorrechner",
-    "description": "Berechnen Sie die Kapazität, Spannung oder Ladung auf einem Kondensator.",
-    "link": "/electronic/capacitorcalculator",
-    "image": "/media/capacitance.png"
+  "name": "Wie man einen Transformator in Proteus konfiguriert",
+  "description": "Berechnet die Impedanz der Primär- und Sekundärwicklung basierend auf der gewünschten Ausgangsspannung.",
+  "link": "/electronic/transformator",
+  "image": "/media/transformerimg.jpg"
   }
-]
+  ]

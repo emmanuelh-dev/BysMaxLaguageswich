@@ -1,47 +1,26 @@
 [
   {
-    "name": "Ohm's Law Calculator",
-    "description": "Calculate voltage, current, resistance and power using Ohm's Law.",
-    "link": "/electronic/ohmlawcalculator",
-    "image": "/media/ohm.png"
+  "name": "Ohm's Law Calculator",
+  "description": "Calculate voltage, current, resistance, and power using Ohm's Law.",
+  "link": "/electronic/ohmlawcalculator",
+  "image": "/media/ohm.png"
   },
   {
-    "name": "Capacitor Calculator",
-    "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
-    "link": "/electronic/capacitorcalculator",
-    "image": "/media/capacitance.png"
+  "name": "Capacitor Calculator",
+  "description": "Calculate capacitance, voltage, or charge stored in a capacitor.",
+  "link": "/electronic/capacitorcalculator",
+  "image": "/media/capacitance.png"
   },
   {
-    "name": "Resistor Color Code",
-    "description": "Find the resistance value of a resistor from its color code.",
-    "link": "/electronic/resistorcolorcode",
-    "image": "/media/resistor.png"
-
+  "name": "Resistor Color Code",
+  "description": "Find the resistance value of a resistor based on its color code.",
+  "link": "/electronic/resistorcolorcode",
+  "image": "/media/resistor.png"
   },
   {
-    "name": "Resistor paralell",
-    "description": "Find the resistance.",
-    "link": "/electronic/resistorcolorcode",
-    "image": "/media/capacitance.png"
-
-  },
-  {
-    "name": "Resistor serie",
-    "description": "Find the resistance ",
-    "link": "/electronic/resistorcolorcode",
-    "image": "/media/capacitance.png"
-
-  },
-  {
-    "name": "Capacitor Calculator",
-    "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
-    "link": "/electronic/capacitorcalculator",
-    "image": "/media/capacitance.png"
-  },
-  {
-    "name": "Capacitor Calculator",
-    "description": "Calculate the capacitance, voltage or charge stored on a capacitor.",
-    "link": "/electronic/capacitorcalculator",
-    "image": "/media/capacitance.png"
+  "name": "How to set up a transformer in Proteus?",
+  "description": "Calculate the primary and secondary impedance based on the required output",
+  "link": "/electronic/transformator",
+  "image": "/media/transformerimg.jpg"
   }
-]
+  ]

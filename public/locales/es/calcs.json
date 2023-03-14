@@ -18,27 +18,9 @@
     "image": "/media/resistor.png"
   },
   {
-    "name": "Resistencias en Paralelo",
-    "description": "Encuentra la resistencia.",
-    "link": "/electronic/resistorcolorcode",
-    "image": "/media/capacitance.png"
-  },
-  {
-    "name": "Resistencias en Serie",
-    "description": "Encuentra la resistencia.",
-    "link": "/electronic/resistorcolorcode",
-    "image": "/media/capacitance.png"
-  },
-  {
-    "name": "Calculadora de Capacitores",
-    "description": "Calcula la capacitancia, el voltaje o la carga almacenada en un capacitor.",
-    "link": "/electronic/capacitorcalculator",
-    "image": "/media/capacitance.png"
-  },
-  {
     "name": "¿Cómo configurar un transformador en proteus?",
     "description": "Calcula Calcula la impedancia del primario y el secundario segun la salida que requieras",
     "link": "/electronic/transformator",
-    "image": "/media/transformator.png"
+    "image": "/media/transformerimg.jpg"
   }
 ]

@@ -1,0 +1,18 @@
+{
+  "title": "Wie man in Proteus einen Transformator einrichtet",
+  "description": "Anleitung zum Einrichten eines Transformators in Proteus",
+  "keywords": "Proteus, Transformator, Schritt-für-Schritt-Anleitung",
+  "voltageout": "Ausgangsspannung",
+  "voltagein": "Eingangsspannung",
+  "subtitle": "Der Rechner gibt Ihnen folgende Ergebnisse zurück:",
+  "primary": "Impedanz der Primärwicklung:",
+  "secundary": "Impedanz der Sekundärwicklung:",
+  "how": "So verwenden Sie den Proteus-Rechner",
+  "1": "Öffnen Sie Proteus und erstellen Sie eine neue Schaltung.",
+  "2": "Wählen Sie das Bauteil 'Transformator' aus der Proteus-Bibliothek aus und fügen Sie es zur Schaltung hinzu.",
+  "3": "Konfigurieren Sie die Eingangs- und Ausgangsspannung im Rechner und kopieren Sie die Werte der Impedanz der Primär- und Sekundärwicklung, die der Rechner zurückgibt.",
+  "4": "Doppelklicken Sie im Proteus-Schaltplan auf den Transformator und fügen Sie in dem Eigenschaftenfenster die Werte der Impedanz der Primär- und Sekundärwicklung in die entsprechenden Felder ein.",
+  "5": "Klicken Sie auf 'OK', um das Eigenschaftenfenster zu schließen und die Anschlüsse des Transformators mit Ihrem Schaltkreis zu verbinden.",
+  "6": "Der Transformator ist nun richtig in Ihrem Proteus-Schaltkreis eingerichtet und betriebsbereit.",
+  "about": "Dieser Rechner ermöglicht es Ihnen, die Werte für die Primär- und Sekundärwicklung eines Transformators auf der Grundlage der von Ihnen gewünschten Eingangs- und Ausgangsspannung zu konfigurieren."
+  }

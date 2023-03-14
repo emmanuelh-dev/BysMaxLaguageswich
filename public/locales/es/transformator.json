@@ -1,0 +1,18 @@
+{
+  "title": "¿Cómo configurar un transformador en Proteus?",
+  "description": "Guía para configurar un transformador en Proteus",
+  "keywords": "proteus, transformador, guia paso a paso",
+  "voltageout": "Voltaje de Salida",
+  "voltagein": "Voltaje de Entrada",
+  "subtitle": "La calculadora te devolverá los siguientes resultados: ",
+  "primary": "Impedancia del bobinado primario:",
+  "secundary": "Impedancia del bobinado secundario:",
+  "how": "Cómo utilizar la calculadora en Proteus",
+  "1": "Abre Proteus y crea un nuevo esquemático.",
+  "2": "Selecciona el componente 'transformador' de la biblioteca de Proteus y agrégalo al esquemático.",
+  "3": "Configura el voltaje de entrada y salida en la calculadora y copia los valores de impedancia del bobinado primario y secundario que te devuelve la calculadora.Transformador proteus",
+  "4": "En el esquemático de Proteus, haz doble clic en el transformador y en la ventana de propiedades, pega los valores de impedancia del bobinado primario y secundario en los campos correspondientes.Transformador proteusTransformador proteus",
+  "5": "Haz clic en 'Aceptar' para cerrar la ventana de propiedades y conectar los terminales del transformador a tu circuito.",
+  "6": "Ahora, el transformador está configurado correctamente en tu circuito de Proteus y listo para funcionar.",
+  "about": "Esta calculadora te permite obtener los valores necesarios para configurar el bobinado primario y secundario de un transformador en base al voltaje de entrada y salida que deseas obtener."
+}
