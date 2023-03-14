@@ -38,7 +38,7 @@
   {
     "name": "¿Cómo configurar un transformador en proteus?",
     "description": "Calcula Calcula la impedancia del primario y el secundario segun la salida que requieras",
-    "link": "/electronic/transformadorenproteus",
-    "image": "/media/capacitance.png"
+    "link": "/electronic/transformator",
+    "image": "/media/transformator.png"
   }
 ]

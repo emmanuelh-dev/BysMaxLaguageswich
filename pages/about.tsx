@@ -129,7 +129,7 @@ const about = (
         keywords={"about"}
         baseUrl={"/about"}
       >
-        <h1 className="text-center text-6xl font-extrabold text-blue-700 py-10">
+        <h1 className="text-center text-6xl font-black text-blue-700 py-10">
           Lo que hacemos y por que lo hacemos.
         </h1>
         <p className="text-xl py-4">

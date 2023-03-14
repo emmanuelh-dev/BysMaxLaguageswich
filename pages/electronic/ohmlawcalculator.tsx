@@ -8,6 +8,7 @@ import classNames from "classnames";
 import Image from "next/image";
 import { useState } from "react";
 import { NextSeo } from "next-seo";
+import React from "react";
 type Props = {
   // Add custom props here
 };
@@ -74,7 +75,7 @@ const ohmlawcalculator = (
         Ohm&rsquo;s Law Calculator
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
-        <div className="rounded-md shadow-lg dark:bg-neutral-800">
+        <div className="rounded-md shadow-md dark:shadow-semi-black">
           <div className="p-8 ">
           <div className="mb-4">
             <label className="block mb-2 font-medium">Voltage (V)</label>

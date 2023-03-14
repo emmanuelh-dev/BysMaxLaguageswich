@@ -132,7 +132,7 @@ const electronic = (
               }) => (
                 <div
                   key={calculator.name}
-                  className=" border-xl rounded-lg dark:bg-neutral-900 p-4 shadow-lg  transition duration-500 ease-in-out transform hover:-translate-y-4 hover:shadow-lg overflow-auto"
+                  className=" border-xl rounded-lg dark:shadow-semi-black dark:hover:shadow-semi-black p-4 shadow-md  transition duration-500 ease-in-out transform hover:-translate-y-4 hover:shadow-lg overflow-auto"
                 >
                   <Link href={calculator.link}>
                     <span>

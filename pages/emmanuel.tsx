@@ -19,7 +19,7 @@ type Props = {
     <div className="bg-white text-black dark:bg-black dark:text-white ">
       <Layout title={t("contact:title")} description={t("contact:description")} keywords="Contact" baseUrl={"/contact"}>
         <div className="container mx-auto max-w-2xl p-6">
-          <h1 className="text-center text-5xl md:text-6xl font-extrabold pt-6 md:pb-6 text-blue-700">
+          <h1 className="text-center text-6xl md:text-6xl font-extrabold pt-6 md:pb-6 text-blue-700">
             {t("contact:h1")}
           </h1>
           <div className="pt-6 pb-6">
